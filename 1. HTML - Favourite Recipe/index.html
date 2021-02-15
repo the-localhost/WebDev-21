@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="urf-8">
+        <title>My Favourite Recipe</title> 
+
+        <!-- 1. This is called embedded css styling. Here I wrote basic css using the style 
+            tag inside head tag of html -->
+        <style>
+            /* unvisited link */
+            a:link {
+            color: hotpink;
+            }
+
+            /* visited link */
+            a:visited {
+            color: red;
+            }
+
+            /* mouse hover link */
+            a:hover {
+            color: orangered;
+            }
+
+            /* selected link */
+            a:active {
+            color: blue;
+            }
+
+            /* link text */
+            a{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: large;
+            }
+
+            /* form labels*/
+            label{
+                font-size: large;
+            }
+
+            /* form textfields */
+            input[type=text] { 
+                width: 20%;
+            }
+
+            /* image */
+            #oatmeal {
+                float:right;
+                width:350px;
+                height:350px;
+                border: 1px solid #353535;
+                border-radius: 4px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <!-- 2. 'background' attribute of body tag can be used to add a background image 
+     'color' attribute of css is used to specify text color inside the html container 
+     'margin' attribute of css is used to specify the margin around the html container -->
+    <body background="./images/bg.jpg" style="color: white; margin: 50px;">
+        <header><h1>Oatmeal</h1></header>
+        <main style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <div class="description" id="about_dish">
+                <p>Oatmeal is one of the most healthy breakfast which anyone can prepare 
+                    anytime. You don't need to be a cook to prepare oatmeal and it takes nearly
+                    20 minutes to prepare. There are mainly two varities of oatmeal: one using milk
+                    and other with a frying spicy way. The best part of oatmeal is that you can 
+                    safely substitute it for your meals sometimes as it allows to add fruits, dry
+                    fruits and other edibles into its ingredients list. This makes oatmeal a healthier
+                    option to opt for as a breakfast and evening snacks.
+                </p>
+            </div>
+            <div class="fragmented" id="ingredients">
+                <img src="./images/milk_oatmeal.jpg" alt="Milk-Oatmeal" id="oatmeal" style="">
+                <h3>How to make Milk Oatmeal?</h3>
+                <p>
+                    <strong>Ingredients:</strong>
+                </p>
+                <ul>
+                    <li>Milk</li>
+                    <li>Rolled Oats</li>
+                    <li>Sugar</li>
+                    <li>Fruits</li>
+                    <li>Dry Fruits</li>
+                    <li>Honey (optional)</li>
+                </ul>
+            </div>
+            <!--<br>-->
+            <div class="fragmented" id="steps">
+                <p>
+                    <strong>Steps</strong>:
+                </p>
+                <ol>
+                    <li>Boil around 300ml milk and lower the stove flame.</li>
+                    <li>Put some grinded dry fruits into it and leave it for 2 minutes.</li>
+                    <li>Add 3/4th cup of rolled oats and keep stirring for 8-10 minutes.</li>
+                    <li>Turn off the stove and leave it for 5 minutes.</li>
+                    <li>Cut the fruits and put it as toppings over the oatmeal.</li>
+                    <li>You can add a tablespoon or two of honey for flavour.</li>
+                </ol>
+            </div>
+        </main>
+        <br>
+        <footer>
+            <div class="external-links" id="other_recipes">
+                <h3>Other recipes you should give a try:</h3>
+                <ul style="list-style-type: square;">
+                    <li><a href="https://feelgoodfoodie.net/recipe/how-to-make-oatmeal/">Recipe 1</a></li>
+                    <li><a href="https://www.quakeroats.com/cooking-and-recipes/how-to-prepare-oats">Recipe 2</a></li>
+                    <li><a href="https://www.cookinglight.com/recipes/basic-oatmeal-recipe">Recipe 3</a></li>
+                    <li><a href="https://downshiftology.com/recipes/how-to-make-oat-milk/">Recipe 4</a></li>
+                    <li><a href="https://www.vegrecipesofindia.com/oats-porridge-recipe/">Recipe 5</a></li>
+                </ul>
+            </div>
+            <br>
+            <div id="feedback">
+                <h2>Did you like my recipe? <img src="./images/face-savoring-food.png" height="24" width="24" ></h2>
+                <h3 style="color: darkslategray;">Please leave a rating before you leave!</h3>
+                <form>
+                    <div class="sub-section" id="name" style="float:left; margin-right: 20px;">
+                        <label for="name">Full Name:</label><br><br>
+                        <label for="email">Email Address:</label><br>
+                    </div>                    
+                    <div class="sub-section" id="email">
+                        <!-- 3. The placeholder attribute specifies a short hint that describes the expected value of an input field -->
+                        <input type="text" id="name" name="name" width="100" placeholder="eg. John Smith"><br><br>
+                        <input type="text" id="email" name="email" placeholder="eg. johnsmith@example.com"><br>
+                    </div>
+                    
+                    <h3>How was the recipe?</h3>
+                    <input type="radio" id="1star" name="rating" value="1">
+                    <label for="1star"> Poor</label>
+                    <input type="radio" id="2star" name="rating" value="2">
+                    <label for="2star"> Average</label>
+                    <input type="radio" id="3star" name="rating" value="3">
+                    <label for="3star"> Good</label>
+                    <input type="radio" id="4star" name="rating" value="4">
+                    <label for="4star"> Very Good</label>
+                    <input type="radio" id="5star" name="rating" value="5">
+                    <label for="5star"> Awesome </label><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
