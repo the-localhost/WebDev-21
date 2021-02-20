@@ -1,3 +1,12 @@
 body {
     background: linear-gradient(90deg, #14c1e9, #c86ee1, #f54f59)
 }
+
+#clock {
+    height: 100px;
+    width: 100px;
+    border: solid #000;
+    border-radius: 50%;
+    border-width: 5px;
+    float: right;
+}
