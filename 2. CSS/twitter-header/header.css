@@ -266,36 +266,36 @@ body {
   position: absolute;
 }
 
-#notch2{  /* why top attribute value not same as notch1? */
+#notch2{  
   position:absolute;
   top: 96px;
-  left: 986px;
+  left: 980px;
 }
 
 #notch3{
   position:absolute;
   top: 96px;
-  left: 1026px;
+  left: 1030px;
 }
 
 #notch4{
   position:absolute;
-  top: 175px;
-  left:986px;
+  top: 177px;
+  left:980px;
 }
 
 #notch5{
   position:absolute;
-  top: 175px;
-  left: 1026px;
+  top: 177px;
+  left: 1030px;
 }
 
 .drawer{
   position: absolute;
   background: #000000;
-  width: 76px;
+  width: 80px;
   height: 78px;
-  left: 972px;
+  left: 970px;
 }
 
 #drawer1{
@@ -303,15 +303,15 @@ body {
 }
 
 #drawer2{
-  top: 180px;
+  top: 182px;
 }
 
 .handle {
   position: absolute;
   background: #ffffff;
-  width: 49px;
+  width: 60px;
   height: 5px;
-  left: 986px;
+  left: 980px;
 }
 
 #handle1 {
