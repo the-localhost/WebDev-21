@@ -335,23 +335,67 @@ body {
   top: 275px;
   left: 439px;
   border-width: 0px 0px 5px 5px;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 15px;
 }
 
 #monitor-1-chord-2 {
-  height: 25px;
+  height: 15px;
   width: 25px;
   top: 330px;
   left: 544px;
   border-width: 5px 5px 0px 0px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 10px;
 }
 
 #monitor-2-chord {
   height: 75px;
   width: 110px;
-  top: 292px;
+  top: 282px;
   left: 607px;
   border-width: 0px 5px 5px 0px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 15px;
+}
+
+.supply {
+  background: #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  border-width: 4px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+#supply1 {
+  position: absolute;
+  top: 347px;
+  left: 560px;
+}
+
+#supply2 {
+  position: absolute;
+  top: 347px;
+  left: 590px;
+}
+
+.power-button {
+  background: #818080;
+  height: 6px;
+  width: 6px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+#power-button-1 {
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+#power-button-2 {
+  position: relative;
+  top: 3px;
+  left: 3px;
 }
