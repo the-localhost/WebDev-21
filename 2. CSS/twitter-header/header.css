@@ -206,7 +206,7 @@ body {
   left: 3px;
 }
 
-#design {   /* WHY CHANGING WIDTH IS MOVING DESIGN TO LEFT?*/
+#design {
   position: relative;
   right: -100px;
   top: 7px;
