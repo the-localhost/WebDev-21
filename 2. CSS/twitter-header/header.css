@@ -232,6 +232,16 @@ body {
   z-index: 2;
 }
 
+#cup-bowl{
+  position: absolute; 
+  background: #f64f59; 
+  height: 45px; 
+  width: 80px; 
+  border-radius: 100px 100px 20px 20px; 
+  top: 223px; 
+  left: 229px;
+  transform: rotate(180deg);
+}
 #table-top {
   position: relative;
   background: #000000;
