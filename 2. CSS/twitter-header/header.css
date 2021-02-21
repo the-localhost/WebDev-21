@@ -172,13 +172,13 @@ body {
   top: 72px;
   left: 900px;
   border-style: solid;
-  border-width: 15px 0px 0px 0px;
+  border-width: 10px 0px 0px 0px;
   border-color: #7f8180;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .ring{
-  position: relative;
+  position: absolute;
   background: linear-gradient(90deg, #6ca1ca, #dc48e2, #eac264, #e34436, #61d63e);
   margin: 4px;
   top: 10px;
@@ -186,6 +186,14 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+#ring2{
+  top: 65px;
+}
+
+#ring3{
+  top: 120px;
 }
 
 .gap {
@@ -196,6 +204,17 @@ body {
   border-radius: 50%;
   top: 3px;
   left: 3px;
+}
+
+#design {   /* WHY CHANGING WIDTH IS MOVING DESIGN TO LEFT?*/
+  position: relative;
+  right: -100px;
+  top: 7px;
+  border-right: 10px solid #7f8180;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  height: 130px;
+  width: 0;
 }
 
 #table-top {
