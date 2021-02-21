@@ -267,6 +267,38 @@ body {
   transform: rotate(108deg);
 }
 
+#vapours{
+  position: absolute;
+  top: 190px;
+  left: 250px;
+}
+
+.vapour{
+  position: relative;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 7px #7b8187;
+}
+
+#vapour2{
+  left: 20px;
+}
+
+#vapour3{
+  top: 15px;
+  left: 7px;
+}
+
+#vapour4{
+  top: 16px;
+  left: 23px
+}
+
+#vapour5{
+  top: 13px;
+  left: 10px;
+}
+
 #table-top {
   position: relative;
   background: #000000;
