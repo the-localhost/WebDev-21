@@ -181,7 +181,7 @@ body {
   position: absolute;
   background: linear-gradient(90deg, #6ca1ca, #dc48e2, #eac264, #e34436, #61d63e);
   margin: 4px;
-  top: 10px;
+  top: 6px;
   left: 25px;
   height: 50px;
   width: 50px;
@@ -190,11 +190,11 @@ body {
 }
 
 #ring2{
-  top: 65px;
+  top: 61px;
 }
 
 #ring3{
-  top: 120px;
+  top: 116px;
 }
 
 .gap {
@@ -241,11 +241,14 @@ body {
   left: 200px;
 }
 
+.notch{
+  background: #000000;
+  width: 8px;
+  height: 5px;
+}
+
 #notch1 {
   position:relative;
-  background: #000000;
-  width: 6px;
-  height: 6px;
   top: 265px;
   left: 225px;
 }
@@ -256,5 +259,65 @@ body {
   width: 18px;
   height: 164px;
   top: 263px;
-  left: 219px;
+  left: 220px;
+}
+
+#drawer-stand {
+  position: absolute;
+}
+
+#notch2{  /* why top attribute value not same as notch1? */
+  position:absolute;
+  top: 96px;
+  left: 986px;
+}
+
+#notch3{
+  position:absolute;
+  top: 96px;
+  left: 1026px;
+}
+
+#notch4{
+  position:absolute;
+  top: 175px;
+  left:986px;
+}
+
+#notch5{
+  position:absolute;
+  top: 175px;
+  left: 1026px;
+}
+
+.drawer{
+  position: absolute;
+  background: #000000;
+  width: 76px;
+  height: 78px;
+  left: 972px;
+}
+
+#drawer1{
+  top: 100px;
+}
+
+#drawer2{
+  top: 180px;
+}
+
+.handle {
+  position: absolute;
+  background: #ffffff;
+  width: 49px;
+  height: 5px;
+  left: 986px;
+}
+
+#handle1 {
+  top: 112px; 
+}
+
+#handle2 {
+  top: 192px; 
 }
