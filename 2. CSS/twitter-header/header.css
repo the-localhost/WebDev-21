@@ -242,6 +242,17 @@ body {
   left: 229px;
   transform: rotate(180deg);
 }
+
+#plate{
+  position: absolute; 
+  background: #f64f59; 
+  height: 8px; 
+  width: 95px; 
+  border-radius: 50%; 
+  top: 265px; 
+  left: 223px;
+}
+
 #table-top {
   position: relative;
   background: #000000;
