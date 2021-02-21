@@ -240,3 +240,21 @@ body {
   top: 265px;
   left: 200px;
 }
+
+#notch1 {
+  position:relative;
+  background: #000000;
+  width: 6px;
+  height: 6px;
+  top: 265px;
+  left: 225px;
+}
+
+#main-stand {
+  position: relative;
+  background: #000000;
+  width: 18px;
+  height: 164px;
+  top: 263px;
+  left: 219px;
+}
