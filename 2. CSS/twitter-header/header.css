@@ -2,8 +2,11 @@ body {
     background: linear-gradient(90deg, #14c1e9, #c86ee1, #f54f59);
 }
 
+/* #######CLOCK#######*/
+
 #clock {
     position:relative;
+    right: 40px;
     height: 100px;
     width: 100px;
     border: solid #000;
@@ -26,54 +29,105 @@ body {
 }
 
 .hand {
-    position: absolute;
-    margin: auto;
-    background-color: #000;
-    height: 6px;
-    width: 44px;
-  }
-  .hand:after {
-    background-color: #000;;
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-  }
-  .hand:before {
-    background-color: #000;;
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-  }
+  position: absolute;
+  margin: auto;
+  background-color: #000;
+  height: 6px;
+  width: 44px;
+}
+.hand:after {
+  background-color: #000;;
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+.hand:before {
+  background-color: #000;;
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
 
-  #second {
-    transform: rotate(-90deg);
-    top: -23px;
+#second {
+  transform: rotate(-90deg);
+  top: -23px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#second:after {
+  left: -37px;
+}
+
+#second:before {
+  right: -14px;
+}
+
+#minute {
+    transform:rotate(0deg);
+    top: 0px;
     right: 0;
     bottom: 0;
-    left: 0;
-  }
+    left: -23px;
+}
+#minute:after {
+  left: -14px;
+}
 
-  #second:after {
-    left: -37px;
-  }
+#minute:before {
+  right: -37px;
+}
 
-  #second:before {
-    right: -14px;
-  }
+
+/* ########## MAIN TABLE #########*/
+
+#table {
+  position: relative;
+}
+
+.monitor{
+    position: absolute;
+    border-width: 10px 10px 20px 10px;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 10px;
+    float: left;
+}
+
+#monitor1 {
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 250px;
+  height: 150px;
+  width: 350px;
   
-  #minute {
-      transform:rotate(0deg);
-      top: 0px;
-      right: 0;
-      bottom: 0;
-      left: -23px;
-  }
-  #minute:after {
-    left: -14px;
-  }
+}
 
-  #minute:before {
-    right: -37px;
-  }
+#monitor2 {
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 630px;
+  height: 200px;
+  width: 125px;
+}
+
+#screen1 {
+  border-width: 2px 4px;
+  border-color: #eaeaea;
+  border-style: solid;
+  height: 146px;
+  width: 346px;
+}
+
+#screen2 {
+  border-width: 2px;
+  border-color: #eaeaea;
+  border-style: solid;
+  height: 196px;
+  width: 121px;
+}
