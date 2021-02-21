@@ -253,6 +253,20 @@ body {
   left: 223px;
 }
 
+#cup-handle {
+  position: absolute;
+  background: transparent;
+  height: 5px;
+  width: 19px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f64f59;
+  border-radius: 20px 20px 10px 10px;
+  top: 235px;
+  left: 295px;
+  transform: rotate(108deg);
+}
+
 #table-top {
   position: relative;
   background: #000000;
