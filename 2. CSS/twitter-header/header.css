@@ -84,36 +84,26 @@ body {
 
 /* ########## MAIN TABLE #########*/
 
-#table {
+.monitor {
   position: relative;
 }
 
-.monitor{
+.display{
     position: absolute;
-    border-width: 10px 10px 20px 10px;
+    border-width: 9px 9px 20px 9px;
     border-style: solid;
     border-color: #000;
     border-radius: 10px;
     float: left;
 }
 
-#monitor1 {
+#display1 {
   top: 50px;
   right: 0;
   bottom: 0;
   left: 250px;
   height: 150px;
   width: 350px;
-  
-}
-
-#monitor2 {
-  top: 0px;
-  right: 0;
-  bottom: 0;
-  left: 630px;
-  height: 200px;
-  width: 125px;
 }
 
 #screen1 {
@@ -121,7 +111,16 @@ body {
   border-color: #eaeaea;
   border-style: solid;
   height: 146px;
-  width: 346px;
+  width: 342px;
+}
+
+#display2 {
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 632px;
+  height: 200px;
+  width: 140px;
 }
 
 #screen2 {
@@ -129,5 +128,38 @@ body {
   border-color: #eaeaea;
   border-style: solid;
   height: 196px;
-  width: 121px;
+  width: 136px;
+}
+
+.stand {
+  position:absolute;
+  background:#000000;
+  width: 14px;
+  height: 40px;
+  top: 225px;
+}
+
+#stand1 {
+  left: 427px;
+}
+
+#stand2 {
+  left: 704px;
+}
+
+.base {
+  position:absolute;
+  background:#000000;
+  width: 100px;
+  height: 20px;
+  top: 260px;
+  border-radius: 10px;
+}
+
+#base1 {
+  left: 384px;
+}
+
+#base2 {
+  left: 661px;
 }
