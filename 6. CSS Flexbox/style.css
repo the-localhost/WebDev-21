@@ -13,6 +13,7 @@ body {
   header .profile-name {
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
     margin-left: 10px;
   }
   header .follow-btn {
