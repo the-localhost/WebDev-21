@@ -445,7 +445,7 @@ body {
   left: 590px;
 }
 
-.power-button {
+.power-btn {
   background: #818080;
   height: 6px;
   width: 6px;
@@ -455,13 +455,13 @@ body {
   border-radius: 2px;
 }
 
-#power-button-1 {
+#power-btn-1 {
   position: relative;
   top: 3px;
   left: 3px;
 }
 
-#power-button-2 {
+#power-btn-2 {
   position: relative;
   top: 3px;
   left: 3px;
