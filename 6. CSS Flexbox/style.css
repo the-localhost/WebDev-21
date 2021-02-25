@@ -3,6 +3,7 @@ body {
   }
   header {
     display:flex;
+    display-direction: row;
   }
   header .profile-thumbnail {
     width: 50px;
@@ -37,6 +38,7 @@ body {
   }
   footer {
     display:flex;
+    flex-direction: row;
   }
   footer .stats {
     display:flex;
