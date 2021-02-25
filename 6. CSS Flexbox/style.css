@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
   }
   header {
-
+    display:flex;
   }
   header .profile-thumbnail {
     width: 50px;
@@ -10,11 +10,11 @@ body {
     border-radius: 4px;
   }
   header .profile-name {
-
+    display:flex;
     margin-left: 10px;
   }
   header .follow-btn {
-
+    display:flex;
     margin: 0 0 0 auto;
   }
   header .follow-btn button {
@@ -23,7 +23,7 @@ body {
     padding: 5px;
   }
   header h3, header h4 {
-
+    display:flex;
     margin: 0;
   }
   #inner p {
@@ -36,10 +36,10 @@ body {
     opacity: 0.1;
   }
   footer {
-
+    display:flex;
   }
   footer .stats {
-
+    display:flex;
     font-size: 15px;
   }
   footer .stats strong {
