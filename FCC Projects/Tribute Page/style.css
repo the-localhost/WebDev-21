@@ -20,12 +20,13 @@
 
 #img-div {
     background-color: #fff;
-    padding: 20px 15% 20px 15%;
     text-align: center;
+    margin: 15px;
+    padding: 0 10px 0 10px;
 }
 
 #image {
-    width: 100%;
+    width: auto;
     height: auto;
     max-width: 100%;
 }
@@ -44,4 +45,22 @@
     font-weight: bold;
     text-align: center;
     line-height: 20px;
+    color: #4a4a4a;
+}
+
+#quote {
+    margin: 0 5%;
+    text-align: justify;
+}
+
+#link {
+    text-align: center;
+    margin: 50px;
+    padding: 0 0 40px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a:link{
+    color: #497da8;
 }
