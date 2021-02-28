@@ -8,7 +8,7 @@
 
 #title {
     position: relative;
-    font-size: 2rem;
+    font-size: 36px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     top: 50px;
     color: #343434;
@@ -31,5 +31,17 @@
 }
 
 #img-caption {
-    color: #565656;
+    color: #5a5a5a;
+}
+
+#tribute-info {
+    color: #5a5a5a;
+    padding: 0 30% 0 30%;
+}
+
+#tribute-info p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
 }
