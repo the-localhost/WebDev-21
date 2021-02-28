@@ -17,3 +17,19 @@
 #top p {
     color: #565656;
 }
+
+#img-div {
+    background-color: #fff;
+    padding: 20px 15% 20px 15%;
+    text-align: center;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#img-caption {
+    color: #565656;
+}
