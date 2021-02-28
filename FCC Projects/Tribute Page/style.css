@@ -1,3 +1,7 @@
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
 #main{
     background-color: #eeeeee;
 }
@@ -9,7 +13,6 @@
 #title {
     position: relative;
     font-size: 36px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     top: 50px;
     color: #343434;
 }
@@ -22,7 +25,7 @@
     background-color: #fff;
     text-align: center;
     margin: 15px;
-    padding: 0 10px 0 10px;
+    padding: 10px;
 }
 
 #image {
@@ -37,7 +40,7 @@
 
 #tribute-info {
     color: #5a5a5a;
-    padding: 0 30% 0 30%;
+    padding: 30px 30% 0 30%;
 }
 
 #tribute-info p {
@@ -45,7 +48,17 @@
     font-weight: bold;
     text-align: center;
     line-height: 20px;
-    color: #4a4a4a;
+    color: #3a3a3a;
+}
+
+.year {
+    display: inline;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+li{
+    font-size: 0.9em;
 }
 
 #quote {
