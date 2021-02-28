@@ -5,3 +5,15 @@
 #top {
     text-align: center;
 }
+
+#title {
+    position: relative;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    top: 50px;
+    color: #343434;
+}
+
+#top p {
+    color: #565656;
+}
