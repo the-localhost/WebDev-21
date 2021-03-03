@@ -10,3 +10,8 @@ body{
 #survey-form {
     background: var(--deepblue);
 }
+
+label p{
+    display: inline;
+    font-size: 0.8em;
+}
