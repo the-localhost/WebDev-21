@@ -1,0 +1,4 @@
+SURVEY FORM:
+~ Can apply multiple backgrounds at once (img, gradient at the same time)
+~ <input type="email"> does HTML5 Email Validation 
+~ input type="number> only allows to enter no.s in the field.
