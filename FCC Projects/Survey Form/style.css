@@ -4,11 +4,60 @@
 
 body{
     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    color: #fff;
+    color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+#top{
+    text-align: center;
+}
+
+#form-div{
+    background: var(--deepblue);
+    width: 47%;
+    margin: auto;
+    padding: 3%;
+    border-radius: 1%;
 }
 
 #survey-form {
-    background: var(--deepblue);
+    font-size: 18px;
+}
+
+[type=text], [type=number], [type=email], select{
+    color: #737373;
+    width: 90%;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px 0px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+input:selected {
+    border: 3px;
+    border-color: blue;
+    border-style: solid;
+}
+
+select{
+    width: 92%;
+    height: 35px;
+}
+
+textarea {
+    width: 92%;
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+button {
+    width: 93.5%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #37af65;
+    color: #f3f3f3;
 }
 
 label p{
