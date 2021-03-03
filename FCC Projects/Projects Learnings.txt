@@ -1,4 +1,8 @@
 SURVEY FORM:
 ~ Can apply multiple backgrounds at once (img, gradient at the same time)
 ~ <input type="email"> does HTML5 Email Validation 
-~ input type="number> only allows to enter no.s in the field.
+~ <input type="number> only allows to enter no.s in the field.
+~ <input type="number min="1" max="99"> allows only numbers ranging from 1 to 99
+~ <select> is used to create dropdown, <option> is used to set options
+~ <optgroup> is used to group options under a name, inside <select> dropdown
+~ we can set options to be disabled which makes them non-selectable

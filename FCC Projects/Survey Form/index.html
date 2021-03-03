@@ -11,9 +11,18 @@
             <label id="name-label" for="name"> Name</label><br>
             <input type="text" id="name" placeholder="Enter your name" required><br><br>
             <label id="email-label" for="email"> Email</label><br>
-            <input type="email" id="email" placeholder="Enter your Email" required><br><br>
+            <input type="email" id="email" placeholder="Enter your EmailUser Story #9" required><br><br>
             <label id="number-label" for="number"> Age (optional)</label><br>
             <input type="number" id="number" placeholder="Age" min="1" max="120"><br><br>
+            <label id="current-role-label" for="curent-role">Which option best describes your current role?</label><br>
+            <select name="current-role" id="dropdown" placeholder="Select current role">
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Fulll Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select><br><br>
             <button type="submit">Submit</button>
         </form>
     </body>
