@@ -57,6 +57,7 @@ textarea {
     width: 92%;
     font-size: 16px;
     outline: none;
+    padding: 0.5rem;
     margin: 5px 0px;
 }
 
