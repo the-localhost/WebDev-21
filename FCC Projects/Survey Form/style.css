@@ -27,7 +27,6 @@ body{
   }
 }
 
-
 #survey-form {
     font-size: 1.2em;
 }
@@ -72,4 +71,8 @@ button {
 label p{
     display: inline;
     font-size: 0.8em;
+}
+
+label{  /* Why is this not working? */
+    margin: 0 0 5px 0;
 }
