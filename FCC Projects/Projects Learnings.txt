@@ -4,5 +4,7 @@ SURVEY FORM:
 ~ <input type="number> only allows to enter no.s in the field.
 ~ <input type="number min="1" max="99"> allows only numbers ranging from 1 to 99
 ~ <select> is used to create dropdown, <option> is used to set options
+~ each <option> must have a 'value' attribute. This value is submitted through the form.
 ~ <optgroup> is used to group options under a name, inside <select> dropdown
 ~ we can set options to be disabled which makes them non-selectable
+~ 'focus' state for input elements
