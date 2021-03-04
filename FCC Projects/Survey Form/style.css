@@ -14,31 +14,39 @@ body{
 
 #form-div{
     background: var(--deepblue);
-    width: 47%;
+    width: 450px;
     margin: auto;
-    padding: 3%;
+    padding: 1.5rem;
     border-radius: 1%;
+}   
+
+@media (min-width: 750px){
+  #form-div{
+    padding: 2.5rem;
+    width: 650px;
+  }
 }
 
+
 #survey-form {
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 [type=text], [type=number], [type=email], select{
     color: #737373;
     width: 90%;
-    height: 30px;
-    font-size: 16px;
-    margin: 5px 0px;
-    padding-left: 5px;
-    border-radius: 5px;
+    height: 2rem;
+    font-size: 1.0rem;
+    outline: none;
+    margin: .3rem 0;
+    padding-left: .3rem;
+    border-radius: 0.3rem;
     border-color: transparent;
 }
 
-input:selected {
-    border: 3px;
-    border-color: blue;
-    border-style: solid;
+input:focus, textarea:focus {
+   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }
 
 select{
@@ -49,13 +57,14 @@ select{
 textarea {
     width: 92%;
     font-size: 16px;
+    outline: none;
     margin: 5px 0px;
 }
 
 button {
     width: 93.5%;
-    height: 40px;
-    font-size: 16px;
+    height: 2em;
+    font-size: 1em;
     background-color: #37af65;
     color: #f3f3f3;
 }
