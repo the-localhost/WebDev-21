@@ -1,7 +1,14 @@
+:root {
+    --bgcolor: #eee;
+    --badgecolor: #ddd;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
 
 #nav{
     display: flex;
-    height: 100px;
     justify-content: space-around;
     align-items: baseline;
 }
@@ -15,3 +22,8 @@
     text-align: center;
 }
 
+h1{
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 300;
+}
