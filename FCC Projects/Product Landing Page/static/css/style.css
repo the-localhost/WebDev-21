@@ -35,3 +35,8 @@ h1{
     align-self: baseline;
     margin: 5px;
 }
+
+a {
+    color: #101010;
+    text-decoration: none;
+}
