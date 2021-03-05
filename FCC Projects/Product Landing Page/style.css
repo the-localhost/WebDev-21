@@ -1,0 +1,17 @@
+
+#nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#title{
+    width: 60%;
+}
+
+.nav-link{
+    width: 10%;
+    text-align: center;
+}
+
