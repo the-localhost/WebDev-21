@@ -40,3 +40,25 @@ a {
     color: #101010;
     text-decoration: none;
 }
+
+#subhead-div{
+    text-align: center;
+}
+
+h2{
+    font-weight: 500;
+    margin-bottom: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+#get-started{
+    background-color: #e2ce1c;
+    font-weight: 600;
+    border-radius: 0.5em;
+    border-style: solid;
+    margin-top: 1em;
+}
+
+#get-started:active {
+    background-color: #eedd45;
+}
