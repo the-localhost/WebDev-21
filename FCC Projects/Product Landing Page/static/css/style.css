@@ -98,3 +98,10 @@ h2{
 .desc {
     font-size: 0.95em;
 }
+
+#premium::before {
+    content: url(../images/quality.png);
+    width: 70px;
+    height: 70px;
+    transform: rotate(90deg);
+}
