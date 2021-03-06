@@ -1,6 +1,7 @@
 :root {
     --bgcolor: #eee;
     --badgecolor: #ddd;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 }
 
 h1{
-    display: inline;
+    display: block;
     font-size: 1.8em;
     margin: 0;
     font-weight: 300;
@@ -48,7 +49,6 @@ a {
 h2{
     font-weight: 500;
     margin-bottom: 1em;
-    font-family: 'Lato', sans-serif;
 }
 
 #get-started{
@@ -57,8 +57,44 @@ h2{
     border-radius: 0.5em;
     border-style: solid;
     margin-top: 1em;
+    margin-bottom: 5em;;
 }
 
 #get-started:active {
     background-color: #eedd45;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 750px){
+    .feature{
+        width: 750px;
+        margin: 10px 0px;
+    }
+}
+
+/*This media query shouldn't be reqd. WHY is it not working w/o this query.*/
+@media (max-width: 750px){
+    .feature{
+        width: 90%;
+        margin: 10px 0px;
+    }
+}
+
+.feature-head {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.feature p {
+    margin-top: 0;
+}
+
+.desc {
+    font-size: 0.95em;
 }
