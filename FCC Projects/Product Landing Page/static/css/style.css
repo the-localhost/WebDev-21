@@ -6,12 +6,15 @@
 
 body {
     background-color: var(--bgcolor);
+    padding-top: 0px;
 }
 
 #nav-bar{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 100px;
 }
 
 #title{
@@ -43,7 +46,9 @@ a {
 }
 
 #subhead-div{
+    height: 150px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 h2{
@@ -51,7 +56,7 @@ h2{
     margin-bottom: 1em;
 }
 
-#get-started{
+#get-started-btn{
     background-color: #e2ce1c;
     font-weight: 600;
     border-radius: 0.5em;
@@ -80,7 +85,7 @@ h2{
 /*This media query shouldn't be reqd. WHY is it not working w/o this query.*/
 @media (max-width: 750px){
     .feature{
-        width: 90%;
+        width: 80%;
         margin: 10px 0px;
     }
 }
@@ -100,8 +105,14 @@ h2{
 }
 
 #premium::before {
-    content: url(../images/quality.png);
+    position: relative;
+    content: url(../images/premium_m.png);
     width: 70px;
     height: 70px;
-    transform: rotate(90deg);
+    top: 45px;
+    left: -12%;
+}
+
+#how-it-works{
+    text-align: center;
 }
