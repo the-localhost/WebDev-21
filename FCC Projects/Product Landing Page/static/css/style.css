@@ -93,7 +93,8 @@ h2{
     }
 }
 
-/*This media query shouldn't be reqd. WHY is it not working w/o this query.*/
+/*This media query shouldn't be reqd. 
+WHY is it not working w/o this query.*/
 @media (max-width: 750px){
     .feature{
         width: 80%;
