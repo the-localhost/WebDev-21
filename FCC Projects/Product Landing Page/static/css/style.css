@@ -65,7 +65,7 @@ h2{
     width: 300px;
 }
 
-#get-started-btn{
+.btn{
     background-color: #f5e346;
     height: 25px;
     width: 150px;
@@ -76,7 +76,7 @@ h2{
     margin-bottom: 5em;;
 }
 
-#get-started:active {
+.btn:active {
     background-color: #eedd45;
 }
 
@@ -146,15 +146,33 @@ WHY is it not working w/o this query.*/
 
 #how-it-works{
     text-align: center;
+    margin: 25px 0;
 }
 
 #pricing {
     display: flex;
     justify-content: space-between;    
+    margin: 50px 0;
 }
 
 .pricing-plan{
     width: 300px;
     border: 1px solid #000;
     text-align: center;
+}
+
+.pricing-title{
+    background-color: var(--badgecolor);
+    height: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.pricing-desc {
+    padding-bottom: 20px;
 }
