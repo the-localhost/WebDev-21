@@ -80,6 +80,10 @@ h2{
     background-color: #eedd45;
 }
 
+main{
+    padding: 0  15%;
+}
+
 #features{
     display: flex;
     flex-direction: column;
@@ -89,7 +93,7 @@ h2{
 
 @media (min-width: 750px){
     .feature{
-        width: 750px;
+        width: 700px;
     }
 }
 
@@ -98,6 +102,10 @@ WHY is it not working w/o this query.*/
 @media (max-width: 750px){
     .feature{
         width: 80%;
+    }
+
+    .feature::before{
+        left: -20%;
     }
 }
 
@@ -139,3 +147,9 @@ WHY is it not working w/o this query.*/
 #how-it-works{
     text-align: center;
 }
+
+#pricing {
+    display: flex;
+    justify-content: space-between;    
+}
+
