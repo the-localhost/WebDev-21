@@ -73,7 +73,7 @@ h2{
     border-radius: 0.5em;
     border-style: solid;
     margin-top: 1em;
-    margin-bottom: 5em;;
+    margin-bottom: 5em;
 }
 
 .btn:active {
@@ -156,7 +156,7 @@ WHY is it not working w/o this query.*/
 }
 
 .pricing-plan{
-    width: 300px;
+    width: 290px;
     border: 1px solid #000;
     text-align: center;
 }
@@ -173,6 +173,6 @@ h3{
     font-size: 1.5em;
 }
 
-.pricing-desc {
-    padding-bottom: 20px;
+.pricing-select {
+    margin-bottom: 2em;
 }
