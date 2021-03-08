@@ -7,7 +7,6 @@
 body {
     background-color: var(--bgcolor);
     padding-top: 10px;
-    z-index: 1;
 }
 
 header{
@@ -20,7 +19,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    z-index: 1000;
 }
 
 #title{
@@ -132,6 +130,7 @@ WHY is it not working w/o this query.*/
     height: 100px;
     top: 55px;
     left: -15%;
+    z-index: -1;
 }
 
 #premium::before {
