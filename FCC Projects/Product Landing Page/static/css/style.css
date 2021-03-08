@@ -153,3 +153,8 @@ WHY is it not working w/o this query.*/
     justify-content: space-between;    
 }
 
+.pricing-plan{
+    width: 300px;
+    border: 1px solid #000;
+    text-align: center;
+}
