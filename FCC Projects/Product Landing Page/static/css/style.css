@@ -7,6 +7,7 @@
 body {
     background-color: var(--bgcolor);
     padding-top: 10px;
+    z-index: 1;
 }
 
 header{
@@ -19,6 +20,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    z-index: 1000;
 }
 
 #title{
@@ -175,4 +177,30 @@ h3{
 
 .pricing-select {
     margin-bottom: 2em;
+}
+
+footer {
+    background-color: var(--badgecolor);
+    margin: 0 15%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links{
+    height: 20px;
+}
+
+.footer-link{
+    float: right;
+    margin: 15px 8px;
+    height: 25px;   
+}
+
+#copyright {
+    align-self: flex-end;
+    height: 20px;
+    font-size: 0.9em;
+    margin: 5px 8px;
+    color: #4d4d4d;
 }
