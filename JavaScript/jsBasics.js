@@ -60,3 +60,8 @@ var myDecimal = 10.2;
 var myDecimal1 = 2.2;
 var myDecimal2 = 2.0;
 var myProduct = myDecimal1 * myDecimal2;
+
+// dividing two decimal numbers
+var myDecimal1 = 4.4;
+var myDecimal2 = 2.0;
+var myProduct = myDecimal1 / myDecimal2;
