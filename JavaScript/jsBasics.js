@@ -32,3 +32,6 @@ var myName = 'localhost';
  * i.e., two variables myName and myname are not same
  * Note: best practice is to use camelCase for naming variables
  */
+
+// adding two numbers 
+var mySum = 10 + 8;
