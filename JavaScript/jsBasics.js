@@ -76,3 +76,7 @@ myNum += 2;
 // compound addition using augmented subtraction
 var myNum = 10;
 myNum -= 2;
+
+// compound addition using augmented multiplication
+var myNum = 10;
+myNum *= 2;
