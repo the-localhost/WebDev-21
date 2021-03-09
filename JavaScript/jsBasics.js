@@ -38,3 +38,6 @@ var mySum = 10 + 2;
 
 // subtract
 var myDifference = 10 - 2;
+
+// multiply
+var myDifference = 10 * 2;
