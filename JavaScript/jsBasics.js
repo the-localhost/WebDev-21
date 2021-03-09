@@ -72,3 +72,7 @@ var rem = 11 % 3;
 // compound addition using augmented addition
 var myNum = 10;
 myNum += 2;
+
+// compound addition using augmented subtraction
+var myNum = 10;
+myNum -= 2;
