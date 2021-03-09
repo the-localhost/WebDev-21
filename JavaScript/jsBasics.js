@@ -9,3 +9,5 @@
 // to declare a variable, use 'var' keyword
 var myVariable;
 
+// assigning value to variable using '=' (assignment operator)
+var myName = 'localhost'
