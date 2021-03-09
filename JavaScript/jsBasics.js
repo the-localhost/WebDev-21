@@ -26,3 +26,9 @@ var myName = 'localhost';
  * mathematical operators on these variables will result in undefined.
  * string operations will result in undefined string literal (i.e., "undefined")
  */
+
+/**
+ * variable names are case sensitive
+ * i.e., two variables myName and myname are not same
+ * Note: best practice is to use camelCase for naming variables
+ */
