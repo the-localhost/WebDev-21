@@ -34,4 +34,7 @@ var myName = 'localhost';
  */
 
 // adding two numbers 
-var mySum = 10 + 8;
+var mySum = 10 + 2;
+
+// subtract
+var myDifference = 10 - 2;
