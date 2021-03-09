@@ -3,8 +3,13 @@
 /* This is a multi-line comment.
     We can write multiple lines of comments here 
     I'll be using comments in rest of this file
-    to explain what I'v written
+    to explain what I've written.
 */
+
+// READING INSTRUCTIONS:
+// please don't cconsider the variable declarations in continuous manner
+// the names are used only for learning purpose. this is not a working js file
+// so, variables of same names are declared mutiple times
 
 // to declare a variable, use 'var' keyword
 var myVariable;
