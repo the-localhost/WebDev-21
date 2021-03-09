@@ -44,3 +44,7 @@ var myProduct = 10 * 2;
 
 // divide
 var myQuotient = 10 / 2;
+
+// incrementing a number
+var myNum = 10;
+myNum++;
