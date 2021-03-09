@@ -40,4 +40,7 @@ var mySum = 10 + 2;
 var myDifference = 10 - 2;
 
 // multiply
-var myDifference = 10 * 2;
+var myProduct = 10 * 2;
+
+// divide
+var myQuotient = 10 / 2;
