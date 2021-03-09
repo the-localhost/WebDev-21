@@ -20,3 +20,9 @@ var myUserName = myName;
 
 // initializing variables with assignment operator
 var myName = 'localhost';
+
+/**
+ * uninitialized variables contains the value undefined.
+ * mathematical operators on these variables will result in undefined.
+ * string operations will result in undefined string literal (i.e., "undefined")
+ */
