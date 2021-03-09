@@ -52,3 +52,6 @@ myNum++;
 // decrementing a number
 var myNum = 10;
 myNum--;
+
+// creating a decimal number
+var myDecimal = 10.2;
