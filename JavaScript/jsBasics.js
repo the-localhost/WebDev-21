@@ -10,8 +10,13 @@
 var myVariable;
 
 // assigning value to variable using '=' (assignment operator)
-var myName = 'localhost';
+var myName;
+myName = 'localhost';
 
 // assigning one variable's value to another variable
-var myName = 'localhost';
+var myName;
+myName = 'localhost';
 var myUserName = myName;
+
+// initializing variables with assignment operator
+var myName = 'localhost';
