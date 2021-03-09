@@ -55,3 +55,8 @@ myNum--;
 
 // creating a decimal number
 var myDecimal = 10.2;
+
+// multiplying two decimal numbers
+var myDecimal1 = 2.2;
+var myDecimal2 = 2.0;
+var myProduct = myDecimal1 * myDecimal2;
