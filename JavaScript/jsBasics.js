@@ -68,3 +68,7 @@ var myProduct = myDecimal1 / myDecimal2;
 
 // finding a remainder
 var rem = 11 % 3;
+
+// compound addition using augmented addition
+var myNum = 10;
+myNum += 2;
