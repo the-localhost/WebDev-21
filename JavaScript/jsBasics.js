@@ -177,3 +177,6 @@ var myList = ["HTML", "CSS", "JS"];
 // nesting one array into another array
 var myNestedArray = [["Jazz", "Pop", "EDM"], ["Classical", "Indie", "Sufi"]];
 
+// accessing array data using indices
+var myArray = ["Jack", "Lily", "Alex"];
+var winner = myArray[1];
