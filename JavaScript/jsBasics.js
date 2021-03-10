@@ -173,3 +173,7 @@ var wordBlanks = "My " + myNoun + " is " + myAdjective + ", so he " + myVerb + "
 
 // storing mutiple values using arrays
 var myList = ["HTML", "CSS", "JS"];
+
+// nesting one array into another array
+var myNestedArray = [["Jazz", "Pop", "EDM"], ["Classical", "Indie", "Sufi"]];
+
