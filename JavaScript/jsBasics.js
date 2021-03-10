@@ -96,3 +96,6 @@ var myString2 = "Double quote string";
 
 // escaping quotes in the literal string using backslash
 var myStringWithQuotes = "He said, \"Hello there.\".";
+
+// quoting string with single quotes (w/o using backslash)
+var myString = "Let's do it!";
