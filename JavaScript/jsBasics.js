@@ -184,3 +184,8 @@ var winner = myArray[1];
 // modifying array data using indices (allowed in arrays unlike strings)
 var myArray = [20, 30, 60, 50];
 myArray[2] = 40;
+
+// accessing multi-dimensional arrays with indices
+var myArray = [["Mike",2], ["Tyke", 3]];
+var maxNumber = myArray[1][1];
+
