@@ -207,3 +207,12 @@ myArray.shift();
 // adding elements in front of the array
 var myArray = ["Tia", "Mia", "Sia"];
 myArray.unshift("Dia");
+
+// creating a 2-dimensional array
+var myShoppingList = [
+    ["Chocolate", 5],
+    ["Cookies", 2],
+    ["Nuts", 10],
+    ["Candies", 2],
+    ["Pastries", 10]
+];
