@@ -124,3 +124,9 @@ concatString += "World!";
 // constructing strings with variables
 var firstName = "Ross";
 var greeting = "Good morning, " + firstName + ".";
+
+// appending variables to strings
+var feeling = "awesome!";
+var sentence = "I'm feeling ";
+sentence += feeling;
+
