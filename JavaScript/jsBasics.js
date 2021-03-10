@@ -200,3 +200,7 @@ myArray.pop();
 // popping and storing the value
 var poppedValue = myArray.pop();
 
+// removing first element of the array
+var myArray = ["Tia", "Mia", "Sia"];
+myArray.shift();
+
