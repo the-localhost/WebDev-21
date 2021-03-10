@@ -170,3 +170,6 @@ var myAdjective = "big";
 var myVerb = "ran";
 var myAdverb = "quickly";
 var wordBlanks = "My " + myNoun + " is " + myAdjective + ", so he " + myVerb + " " + myAdverb + ".";
+
+// storing mutiple values using arrays
+var myList = ["HTML", "CSS", "JS"];
