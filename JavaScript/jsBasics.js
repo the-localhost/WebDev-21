@@ -134,3 +134,6 @@ sentence += feeling;
 var myString = "I'm awesome.";
 var myStringLenght = myString.length;
 
+// finding first char using bracket notation
+var myString = "Hello World!";
+var firstCharacter = myString[0];
