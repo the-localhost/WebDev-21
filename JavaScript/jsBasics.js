@@ -193,3 +193,10 @@ var maxNumber = myArray[1][1];
 var myArray = ["Tia", "Mia", "Sia"];
 myArray.push("Dia");
 
+// popping a value off of the end of an array
+var myArray = ["Tia", "Mia", "Sia"];
+myArray.pop();
+
+// popping and storing the value
+var poppedValue = myArray.pop();
+
