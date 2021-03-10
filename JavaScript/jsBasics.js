@@ -204,3 +204,6 @@ var poppedValue = myArray.pop();
 var myArray = ["Tia", "Mia", "Sia"];
 myArray.shift();
 
+// adding elements in front of the array
+var myArray = ["Tia", "Mia", "Sia"];
+myArray.unshift("Dia");
