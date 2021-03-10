@@ -180,3 +180,7 @@ var myNestedArray = [["Jazz", "Pop", "EDM"], ["Classical", "Indie", "Sufi"]];
 // accessing array data using indices
 var myArray = ["Jack", "Lily", "Alex"];
 var winner = myArray[1];
+
+// modifying array data using indices (allowed in arrays unlike strings)
+var myArray = [20, 30, 60, 50];
+myArray[2] = 40;
