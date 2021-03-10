@@ -116,3 +116,7 @@ var myString = "Let's do it!";
 
 // concatenating strings with plus operator
 var concatString = "Hello " + "World!";
+
+// concatenating strings with plus equals operator
+var concatString = "Hello ";
+concatString += "World!";
