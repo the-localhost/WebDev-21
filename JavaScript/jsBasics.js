@@ -113,3 +113,6 @@ var myString = "Let's do it!";
  *  \b	word boundary
  *  \f	form feed
  */
+
+// concatenating strings with plus operator
+var concatString = "Hello " + "World!";
