@@ -99,3 +99,17 @@ var myStringWithQuotes = "He said, \"Hello there.\".";
 
 // quoting string with single quotes (w/o using backslash)
 var myString = "Let's do it!";
+
+/**
+ * Escape Sequences:
+ * 
+ * Code	Output
+ *  \'	single quote
+ *  \"	double quote
+ *  \\	backslash
+ *  \n	newline
+ *  \r	carriage return
+ *  \t	tab
+ *  \b	word boundary
+ *  \f	form feed
+ */
