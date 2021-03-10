@@ -158,3 +158,9 @@ var nthCharacter = myString[n-1];
 // finding last character in a string using bracket notation
 var myString = "Hello World!";
 var lastCharacter = myString[myString.length-1];
+
+// finding nth-to-last character in a string (n < length of string)
+var myString = "Welcome friends.";
+var n = 3;
+var nthToLastChar = myString[myString.length-n];
+
