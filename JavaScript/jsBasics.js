@@ -7,7 +7,7 @@
 */
 
 // READING INSTRUCTIONS:
-// please don't cconsider the variable declarations in continuous manner
+// please don't consider the variable declarations in continuous manner
 // the names are used only for learning purpose. this is not a working js file
 // so, variables of same names are declared mutiple times
 
@@ -89,3 +89,9 @@ myNum *= 2;
 // compound division using augmented division
 var myNum = 10;
 myNum /= 2;
+
+// declaring string variables
+var myString1 = 'Single quote string';
+var myString2 = "Double quote string";
+
+// 
