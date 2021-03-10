@@ -223,3 +223,10 @@ function sayHello() {
     console.log("Hello dear."); 
 }
 sayHello();     // calling the function
+
+// passing values to functions with arguments
+function functionWithArgs(param1, param2) {
+    console.log(param1, param2);
+}
+functionWithArgs("Hello", "World!");
+functionWithArgs("You're", "welcome.");
