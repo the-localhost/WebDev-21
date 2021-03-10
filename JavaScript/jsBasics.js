@@ -130,3 +130,7 @@ var feeling = "awesome!";
 var sentence = "I'm feeling ";
 sentence += feeling;
 
+// finding length of a string
+var myString = "I'm awesome.";
+var myStringLenght = myString.length;
+
