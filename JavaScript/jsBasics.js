@@ -134,6 +134,18 @@ sentence += feeling;
 var myString = "I'm awesome.";
 var myStringLenght = myString.length;
 
-// finding first char using bracket notation
+// finding first character of a string using bracket notation
 var myString = "Hello World!";
 var firstCharacter = myString[0];
+
+/**
+ * String Immutability:
+ * ```````````````````
+ *          var myString = "Jello!";
+ * 
+ * In JS, strings are immutable. So, the folloeing code snippet will throw an error:
+ *          myString[0] = "H";
+ * While, we can't modify string literals, we can reassign new literals to string variables.
+ * So, the following code is the correct way:
+ *          myString = "Hello";
+ */
