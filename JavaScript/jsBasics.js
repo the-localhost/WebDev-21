@@ -94,4 +94,5 @@ myNum /= 2;
 var myString1 = 'Single quote string';
 var myString2 = "Double quote string";
 
-// 
+// escaping quotes in the literal string using backslash
+var myStringWithQuotes = "He said, \"Hello there.\".";
