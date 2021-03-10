@@ -216,3 +216,10 @@ var myShoppingList = [
     ["Candies", 2],
     ["Pastries", 10]
 ];
+
+// writing reusable code using functions
+function sayHello() {
+    // prints quoted text on console screen
+    console.log("Hello dear."); 
+}
+sayHello();     // calling the function
