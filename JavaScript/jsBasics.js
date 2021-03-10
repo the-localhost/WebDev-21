@@ -120,3 +120,7 @@ var concatString = "Hello " + "World!";
 // concatenating strings with plus equals operator
 var concatString = "Hello ";
 concatString += "World!";
+
+// constructing strings with variables
+var firstName = "Ross";
+var greeting = "Good morning, " + firstName + ".";
