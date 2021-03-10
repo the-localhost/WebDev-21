@@ -189,3 +189,7 @@ myArray[2] = 40;
 var myArray = [["Mike",2], ["Tyke", 3]];
 var maxNumber = myArray[1][1];
 
+// appending data to the end of array
+var myArray = ["Tia", "Mia", "Sia"];
+myArray.push("Dia");
+
