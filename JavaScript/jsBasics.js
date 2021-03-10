@@ -149,3 +149,8 @@ var firstCharacter = myString[0];
  * So, the following code is the correct way:
  *          myString = "Hello";
  */
+
+// finding nth character in a string using bracket notation (n < length of string)
+var myString = "Hello";
+var n = 2;
+var nthCharacter = myString[n-1];
