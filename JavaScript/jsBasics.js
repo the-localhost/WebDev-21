@@ -164,3 +164,9 @@ var myString = "Welcome friends.";
 var n = 3;
 var nthToLastChar = myString[myString.length-n];
 
+// Word Blanks (simple excercise with strings)
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+var wordBlanks = "My " + myNoun + " is " + myAdjective + ", so he " + myVerb + " " + myAdverb + ".";
