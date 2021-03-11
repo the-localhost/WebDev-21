@@ -273,3 +273,9 @@ function plusThree(num) {
     return num + 3;
 }
 var answer = plusThree(5);
+
+// the return type is undefined for function w/o return statement
+function addThree(num) {
+    num = num+3;
+}
+console.log(addThree(num));
