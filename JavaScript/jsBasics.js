@@ -279,3 +279,9 @@ function addThree(num) {
     num = num+3;
 }
 console.log(addThree(num));
+
+// assigning with a returned value
+function add(num1, num2) {
+    return num1+num2;
+}
+var sum = add(3, 5);
