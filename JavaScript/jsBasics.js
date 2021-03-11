@@ -338,3 +338,15 @@ function trueOrFalse(wasThatTrue) {
 // determining type of variable/value with typeof
 var myVar = "3";
 console.log(typeof myVar)
+
+/** INEQUALITY OPERATOR
+ *  returns false where equality would return true and vice versa
+ *  > converts data types of values while comparing
+ */
+function testNotEqual(val) {
+    if (val!=99) { 
+        return "Not Equal";
+    }
+    return "Equal";
+}
+testNotEqual(10);
