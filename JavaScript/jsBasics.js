@@ -316,7 +316,7 @@ function trueOrFalse(wasThatTrue) {
     return "No, that was false";
 }
 
-/** EQUALITY OPERATOR
+/** EQUALITY OPERATOR (==)
  *  compares two values and returns true if they're equivalent or false if they are not
  *  > to compare two different datatypes (for example, numbers and string)
  *    JS converts one type to another (Type Coercion). Example:
@@ -324,4 +324,13 @@ function trueOrFalse(wasThatTrue) {
  *      1   ==  2       false
  *      1   == '1'      true
  *      "3" ==  3       true
+ */
+
+/**
+ * STRICT EQUALITY OPERATOR (===)
+ * unlike the equality operator, the strict equality operator does not perform a type conversion
+ * > returns false if the values being compared have different data types
+ * > Examples:
+ *      3 === 3         true
+ *      3 === '3'       false
  */
