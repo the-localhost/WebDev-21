@@ -296,3 +296,10 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
+
+/** BOOLEAN DATATYPE
+ *  Booleans may only be one of two values: true or false.
+ *  > basically little on-off switches, where true is on and false is off
+ *  > strings "true" and "false" are not Boolean and have no special meaning
+ */
+
