@@ -267,3 +267,9 @@ function myFun() {
   var someVar = "Head";
   return someVar;
 }
+
+// returning a value from a function
+function plusThree(num) {
+    return num + 3;
+}
+var answer = plusThree(5);
