@@ -232,9 +232,9 @@ functionWithArgs("Hello", "World!");
 functionWithArgs("You're", "welcome.");
 
 /** GLOBAL SCOPE VARIABLES
- * Global variable: They are visible everywhere in the JS code.
- * > variables defined outside of a function block
- * > variables used without the var keyword
+ *  Global variable: They are visible everywhere in the JS code.
+ *  > variables defined outside of a function block
+ *  > variables used without the var keyword (anywhere)
  */
 var globalVariable = 10;
 function fun1() {
@@ -250,3 +250,13 @@ function fun2() {
     }
     console.log(output);
 }
+
+/** LOCAL SCOPE VARIABLES
+ *  Local variable: Only visible within the function in which variable is defined 
+ */
+ function myLocalScope() {
+    var myLocalVar = "hello";
+    console.log('inside myLocalScope', myLocalVar);
+  }
+  myLocalScope();
+  console.log('outside myLocalScope', myLocalVar);
