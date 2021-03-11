@@ -334,3 +334,7 @@ function trueOrFalse(wasThatTrue) {
  *      3 === 3         true
  *      3 === '3'       false
  */
+
+// determining type of variable/value with typeof
+var myVar = "3";
+console.log(typeof myVar)
