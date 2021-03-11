@@ -303,3 +303,15 @@ console.log("After: " + JSON.stringify(testArr));
  *  > strings "true" and "false" are not Boolean and have no special meaning
  */
 
+// conditional logics with if statements
+/** pseudo code
+ * if (condition is true) {
+ *   statement is executed
+ * }
+ */
+function trueOrFalse(wasThatTrue) {
+    if(wasThatTrue){
+        return "Yes, that was true";
+    } 
+    return "No, that was false";
+}
