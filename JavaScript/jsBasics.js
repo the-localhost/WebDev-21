@@ -285,3 +285,14 @@ function add(num1, num2) {
     return num1+num2;
 }
 var sum = add(3, 5);
+
+// creating queue function using array
+function standInLine(arr, item) {
+    arr.push(item);
+    item=arr.shift();
+    return item;
+}
+var testArr = [1,2,3,4,5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
