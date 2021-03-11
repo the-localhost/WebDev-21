@@ -254,9 +254,16 @@ function fun2() {
 /** LOCAL SCOPE VARIABLES
  *  Local variable: Only visible within the function in which variable is defined 
  */
- function myLocalScope() {
+function myLocalScope() {
     var myLocalVar = "hello";
     console.log('inside myLocalScope', myLocalVar);
-  }
-  myLocalScope();
-  console.log('outside myLocalScope', myLocalVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myLocalVar);
+
+// Local variable will take precedence over global variable with same name
+var someVar = "Hat";
+function myFun() {
+  var someVar = "Head";
+  return someVar;
+}
