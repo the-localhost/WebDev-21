@@ -460,7 +460,7 @@ function testElseIf(val) {
 }
 testElseIf(7);
 
-// logical order of else if statwmwnts is important; if changed, can change output
+// logical order of else if statements is important; if changed, can change output
 function orderMyLogic(val) {
     if (val < 5) {
       return "Less than 5";
@@ -471,3 +471,15 @@ function orderMyLogic(val) {
     }
 }
 orderMyLogic(7);
+
+// if/else statements can be chained together for complex logic; pseudocode:
+if (condition1) {
+    statement1
+} else if (condition2) {
+    statement2
+} else if (condition3) {
+    statement3
+. . .
+} else {
+    statementN
+}
