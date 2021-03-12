@@ -431,3 +431,17 @@ function testLogicalOr(val) {
     return "Inside";
 }
 testLogicalOr(15);
+
+/** ELSE STATEMENTS
+ *  used to execute alternate code in case the condition of if statement is false
+ */
+function testElse(val) {
+    var result = "";
+    if (val > 5) {
+      result = "Bigger than 5";
+    } else{
+      result = "5 or Smaller";
+    }
+    return result;
+}
+testElse(4);
