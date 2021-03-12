@@ -479,7 +479,7 @@ if (condition1) {
     statement2
 } else if (condition3) {
     statement3
-. . .
+//. . .
 } else {
     statementN
 }
@@ -504,3 +504,29 @@ function golfScore(par, strokes) {
   }
 }
 golfScore(5, 4);
+
+/** SWITCH STATEMENTS
+ *  used to choose from many options
+ *  > tests a value and can have many case statements which define various possible values
+ *  > statements are executed from the first matched case value until a break is encountered
+ *  > case values are tested with strict equality (===).
+ *  > 'break' tells JS to stop executing statements. If omitted, the next statements will be executed
+ */
+function caseInSwitch(val) {
+    var answer = "";
+    switch(val) {
+      case 1:
+        answer="alpha";
+        break;
+      case 2:
+        answer="beta";
+        break;
+      case 3:
+        answer="gamma";
+        break;
+      case 4:
+        answer="delta";
+    }
+    return answer;
+}
+caseInSwitch(1);
