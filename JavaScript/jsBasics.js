@@ -384,3 +384,16 @@ function testGreaterThan(val) {
     return "Less than 10";
 }
 testGreaterOrEqual(10);
+
+// comparison with the less than operator (<)
+// datatype conversion occurs during comparison
+function testLessThan(val) {
+    if (val<25) {  
+      return "Under 25";
+    }
+    if (val<55) { 
+      return "Under 55";
+    }
+    return "55 or Over";
+}
+testLessThan(10);
