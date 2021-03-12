@@ -420,3 +420,14 @@ function testLogicalAnd(val) {
     return "No";
 }
 testLogicalAnd(10);
+
+/** Logical OR operator (||)
+ *  returns true if either of the operands is true, else retuens false
+ */
+function testLogicalOr(val) {
+    if (val<10 || val>20) {
+      return "Outside";
+    }
+    return "Inside";
+}
+testLogicalOr(15);
