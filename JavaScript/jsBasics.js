@@ -372,3 +372,15 @@ function testGreaterThan(val) {
     return "10 or Under";
 }
  testGreaterThan(10);
+
+ // comparison with greater than or equal to (>=)
+ function testGreaterOrEqual(val) {
+    if (val>=20) {  
+      return "20 or Over";
+    }
+    if (val>=10) {  
+      return "10 or Over";
+    }
+    return "Less than 10";
+}
+testGreaterOrEqual(10);
