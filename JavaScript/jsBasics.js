@@ -339,7 +339,7 @@ function trueOrFalse(wasThatTrue) {
 var myVar = "3";
 console.log(typeof myVar)
 
-/** INEQUALITY OPERATOR
+/** INEQUALITY OPERATOR (!=)
  *  returns false where equality would return true and vice versa
  *  > converts data types of values while comparing
  */
@@ -350,3 +350,12 @@ function testNotEqual(val) {
     return "Equal";
 }
 testNotEqual(10);
+
+// comparison using STRICT INEQUALITY OPERATOR (!==)
+function testStrictNotEqual(val) {
+    if (val!==17) { // Change this line
+      return "Not Equal";
+    }
+    return "Equal";
+ }
+testStrictNotEqual("17");
