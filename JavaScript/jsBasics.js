@@ -361,6 +361,7 @@ function testStrictNotEqual(val) {
 testStrictNotEqual("17");
 
 // comparison with the greater than operator (>)
+// datatype conversion occurs during comparison
 function testGreaterThan(val) {
     if (val>100) {  
       return "Over 100";
