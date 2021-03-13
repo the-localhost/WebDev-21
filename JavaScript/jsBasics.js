@@ -630,3 +630,21 @@ var myObj = {
 myObj["Space Name"];
 myObj['More Space'];
 myObj["NoSpace"];
+
+// accessing object properties using variables
+var dogs = {
+  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
+};
+var myDog = "Hunter";
+var myBreed = dogs[myDog];
+console.log(myBreed);
+
+// updating object properties using dot/bracket notation
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+ourDog.name="Campy";
+ourDog["friends"]=["everything but cats"];
