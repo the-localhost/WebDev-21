@@ -610,3 +610,12 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   "tails": 1,
   "enemies": ["Water", "Dogs"]
 };
+
+// accessing object notation using dot notation
+// used when we know the name of the property we're trying to access, ahead of time
+var myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+var prop1val = myObj.prop1;
+var prop2val = myObj.prop2;
