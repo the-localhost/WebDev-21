@@ -611,7 +611,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   "enemies": ["Water", "Dogs"]
 };
 
-// accessing object notation using dot notation
+// accessing object properties using dot notation
 // used when we know the name of the property we're trying to access, ahead of time
 var myObj = {
   prop1: "val1",
@@ -619,3 +619,14 @@ var myObj = {
 };
 var prop1val = myObj.prop1;
 var prop2val = myObj.prop2;
+
+// accessing object properties using bracket notation
+// needed especially when the property name has a space in it; can be used otherwise too
+var myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock",
+  "NoSpace": "USS Enterprise"
+};
+myObj["Space Name"];
+myObj['More Space'];
+myObj["NoSpace"];
