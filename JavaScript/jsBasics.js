@@ -560,6 +560,14 @@ switch(val) {
 }
 
 // returning boolean values from the functions
-funtion isEqual(a, b){
+function isEqual(a, b){
   return a===b;
 }
+
+// if return statement is reached, the code following it is not executed
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
