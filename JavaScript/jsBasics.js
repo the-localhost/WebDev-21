@@ -558,3 +558,8 @@ switch(val) {
   case 4:
     result = "4 alone";
 }
+
+// returning boolean values from the functions
+funtion isEqual(a, b){
+  return a===b;
+}
