@@ -648,3 +648,12 @@ var ourDog = {
 };
 ourDog.name="Campy";
 ourDog["friends"]=["everything but cats"];
+
+// adding new properties to the JS object
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+ourDog.bark = "bow-wow";
