@@ -597,3 +597,16 @@ function cc(card) {
 }
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
+/** JavaScript Objects:
+ *  > useful for storing data in a structured way
+ *  > can represent real world objects
+ *  > data is accessed through properties
+ * NOTE: property name can be numbers.
+ * JS will automatically typecast non-string properties as strings.
+ */
+ var cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
