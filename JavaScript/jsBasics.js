@@ -571,3 +571,29 @@ function myFun() {
   console.log("byebye")
 }
 myFun();
+
+// Card Counting game : https://en.wikipedia.org/wiki/Card_counting
+var count = 0;
+var ans="";
+function cc(card) {
+  switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+  }
+  if(count>0) ans = count+" "+"Bet";
+  else ans = count+" "+"Hold";
+  return ans;
+}
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
