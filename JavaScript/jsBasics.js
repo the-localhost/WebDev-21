@@ -757,3 +757,11 @@ while(i < 5) {
   ourArray.push(i);
   i++;
 }
+
+// iterating with JS for loops
+// for (a; b; c)
+// a: intialization statement; b: condition statement; c: final expression
+var ourArray = [];
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
