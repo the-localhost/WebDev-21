@@ -856,7 +856,7 @@ function findGreaterOrEqual(a, b) {
     : "b is greater";
 }
 
-// using recursion to create a countdown
+// EXCERCISE: using recursion to create a countdown
 var countArray = [];
 function countdown(n){
   if (n >= 1) {
@@ -866,3 +866,10 @@ function countdown(n){
   return countArray;
 }
 
+// EXCERCISE: using recursion to create a range of numbers
+var range = [];
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum>endNum) return range;
+  range.push(startNum);
+  return rangeOfNumbers(startNum+1, endNum);
+};
