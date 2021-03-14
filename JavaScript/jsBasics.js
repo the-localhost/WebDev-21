@@ -855,3 +855,14 @@ function findGreaterOrEqual(a, b) {
     : (a > b) ? "a is greater" 
     : "b is greater";
 }
+
+// using recursion to create a countdown
+var countArray = [];
+function countdown(n){
+  if (n >= 1) {
+    countArray.push(n);
+    countArray = countdown(n - 1);
+  }
+  return countArray;
+}
+
