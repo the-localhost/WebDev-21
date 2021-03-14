@@ -848,3 +848,10 @@ var a = parseInt("11", 2);
 function findGreater(a, b) {
   return a > b ? "a is greater" : "b is greater";
 }
+
+// using multiple conditional (ternary) operators
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
