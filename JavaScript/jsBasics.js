@@ -668,3 +668,20 @@ var ourDog = {
   "bark": "bow-wow"
 };
 delete ourDog.bark;
+
+// using objects for lookups
+// objects can be thought of as a key/value storage
+function phoneticLookup(val) {
+  var result = "";
+  var lookup = {
+    "alpha":"Adams",
+    "bravo":"Boston",
+    "charlie":"Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank",
+  };
+  result=lookup[val];
+  return result;
+}
+phoneticLookup("charlie");
