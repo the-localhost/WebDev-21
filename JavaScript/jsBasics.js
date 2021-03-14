@@ -837,4 +837,8 @@ function convertToInteger(str) {
 }
 console.log(convertToInteger("56a22"));
 
+// using the parseInt fn with a radix
+// parseInt() takes a second argument for the radix (an integer btw 2 and 36)
+// which specifies the base of the number in the string
+var a = parseInt("11", 2);
 
