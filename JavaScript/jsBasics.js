@@ -828,3 +828,13 @@ function randomWholeNum() {   // returns a whole no in [0,9)
 function randomRange(myMin, myMax) {
   return myMin + Math.floor(Math.random() * (myMax-myMin+1));
 }
+
+// using the parseInt function
+// parses a string and returns an integer;  
+// returns NaN if first char can't be converted in a number
+function convertToInteger(str) {
+  return parseInt(str);
+}
+console.log(convertToInteger("56a22"));
+
+
