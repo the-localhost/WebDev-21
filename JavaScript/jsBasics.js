@@ -765,3 +765,9 @@ var ourArray = [];
 for (var i = 0; i < 5; i++) {
   ourArray.push(i);
 }
+
+// iterating odd numbers with a for loop
+var ourArray = [];
+for (var i = 1; i < 10; i += 2) {
+  ourArray.push(i);
+}
