@@ -632,6 +632,7 @@ myObj['More Space'];
 myObj["NoSpace"];
 
 // accessing object properties using variables
+// this can be done only using bracket notation 
 var dogs = {
   Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
 };
@@ -657,3 +658,13 @@ var ourDog = {
   "friends": ["everything!"]
 };
 ourDog.bark = "bow-wow";
+
+// deleting properties from a JS object
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+delete ourDog.bark;
