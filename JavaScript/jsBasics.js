@@ -772,4 +772,14 @@ for (var i = 1; i < 10; i += 2) {
   ourArray.push(i);
 }
 
-//
+// counting backwards with a for loop
+var ourArray = [];
+for (var i = 10; i > 0; i -= 2) {
+  ourArray.push(i);
+}
+
+// iterating through an array with a for loop
+var arr = [10, 9, 8, 7, 6];
+for (var i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
