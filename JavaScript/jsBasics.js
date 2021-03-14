@@ -726,3 +726,26 @@ var ourStorage = {
   }
 };
 var mySecrets = ourStorage.cabinet["top drawer"].folder2;
+
+// accessing nested arrays
+// by chaining array bracket notation
+var ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+ourPets[0].names[1];
+ourPets[1].names[0];
