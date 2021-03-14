@@ -802,3 +802,19 @@ do {
   ourArray.push(i);
   i++;
 } while (i < 5);
+
+// replacing loops using recursion
+// concept that a function can be expressed in terms of itself
+function multiply(arr, n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return multiply(arr, n - 1) * arr[n - 1];
+  }
+}
+
+// generating random numbers with js
+// Math.random(): generates a fraction in the range [0,1)
+function randomFraction() {
+  return Math.random();
+}
