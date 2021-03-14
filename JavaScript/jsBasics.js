@@ -823,3 +823,8 @@ function randomFraction() {
 function randomWholeNum() {   // returns a whole no in [0,9)
   return Math.floor(Math.random()*10);
 }
+
+// generating random whole numbers within a [min,max] range
+function randomRange(myMin, myMax) {
+  return myMin + Math.floor(Math.random() * (myMax-myMin+1));
+}
