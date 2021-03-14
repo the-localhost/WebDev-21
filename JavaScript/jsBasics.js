@@ -694,3 +694,19 @@ var myObj = {
 };
 myObj.hasOwnProperty("top");
 myObj.hasOwnProperty("middle");
+
+// manipulating complex data
+// A JavaScript object is one way to handle flexible data
+var ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  }
+];
