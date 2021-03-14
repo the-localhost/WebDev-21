@@ -842,3 +842,9 @@ console.log(convertToInteger("56a22"));
 // which specifies the base of the number in the string
 var a = parseInt("11", 2);
 
+// using the conditional (ternary) operator
+// a ? b : c 
+// a: condition, b: the code to run when a is true; c: code to run when a is false
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater";
+}
