@@ -685,3 +685,12 @@ function phoneticLookup(val) {
   return result;
 }
 phoneticLookup("charlie");
+
+// testing objects for properties
+// .hasOwnProperty(propname) : returns true if the property is found else false
+var myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");
+myObj.hasOwnProperty("middle");
