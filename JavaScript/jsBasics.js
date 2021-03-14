@@ -818,3 +818,8 @@ function multiply(arr, n) {
 function randomFraction() {
   return Math.random();
 }
+
+// generating random whole numbers with js
+function randomWholeNum() {   // returns a whole no in [0,9)
+  return Math.floor(Math.random()*10);
+}
