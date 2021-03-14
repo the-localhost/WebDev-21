@@ -749,3 +749,11 @@ var ourPets = [
 ];
 ourPets[0].names[1];
 ourPets[1].names[0];
+
+// iterating with JavaScript while loops
+var ourArray = [];
+var i = 0;
+while(i < 5) {
+  ourArray.push(i);
+  i++;
+}
