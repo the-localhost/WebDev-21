@@ -750,7 +750,7 @@ var ourPets = [
 ourPets[0].names[1];
 ourPets[1].names[0];
 
-// iterating with JavaScript while loops
+// iterating with JavaScript WHILE loops
 var ourArray = [];
 var i = 0;
 while(i < 5) {
@@ -758,7 +758,7 @@ while(i < 5) {
   i++;
 }
 
-// iterating with JS for loops
+// iterating with JS FOR loops
 // for (a; b; c)
 // a: intialization statement; b: condition statement; c: final expression
 var ourArray = [];
@@ -793,3 +793,12 @@ for (var i=0; i < arr.length; i++) {
     console.log(arr[i][j]);
   }
 }
+
+// iterating with DO WHILE loops
+// loops runs once even if the condition fails on the first check
+var ourArray = [];
+var i = 0;
+do {
+  ourArray.push(i);
+  i++;
+} while (i < 5);
