@@ -132,7 +132,7 @@ sentence += feeling;
 
 // finding length of a string
 var myString = "I'm awesome.";
-var myStringLenght = myString.length;
+var myStringLength = myString.length;
 
 // finding first character of a string using bracket notation
 var myString = "Hello World!";
