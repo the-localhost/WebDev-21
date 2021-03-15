@@ -148,7 +148,7 @@ var firstCharacter = myString[0];
  * While, we can't modify string literals, we can reassign new literals to string variables.
  * So, the following code is the correct way:
  *          myString = "Hello";
- */
+*/
 
 // finding nth character in a string using bracket notation (n < length of string)
 var myString = "Hello";
@@ -172,6 +172,7 @@ var myAdverb = "quickly";
 var wordBlanks = "My " + myNoun + " is " + myAdjective + ", so he " + myVerb + " " + myAdverb + ".";
 
 // storing mutiple values using arrays
+// JS arrays can store different types of data
 var myList = ["HTML", "CSS", "JS"];
 
 // nesting one array into another array
