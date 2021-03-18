@@ -90,10 +90,15 @@ console.log(greeting());
 // using the rest parameter with function parameters
 // we can give variable no. of arguments
 // arguments stored in array can be accessed in the function
-// rest paramater allows us to apply map(), filter() and reduce() on the parameters array
 function howMany(...args) {
     return "You have passed " + args.length + " arguments.";
 }
 console.log(howMany(0, 1, 2));
 console.log(howMany("string", null, [1, 2, 3], { }));
+
+// rest paramater allows us to apply map(), filter() and reduce() on the parameters array
+// eliminating the need to check the args array
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}
 
