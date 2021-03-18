@@ -38,3 +38,10 @@ let myDog = "Tommy";        //throws SyntaxError
 // common practice for naming variables: uppercase letters with underscore
 const FAV_PET = "Cats";
 FAV_PET = "Dogs";       //throws TypeError
+
+// objects, including arrays & functions, assigned to a variable using const are still mutable
+// using the const declaration only prevents reassignment of the variable identifier
+const s = [5, 6, 7];
+// s = [1, 2, 3];       // will throw TypeError
+s[2] = 45;
+console.log(s);
