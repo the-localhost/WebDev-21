@@ -3,7 +3,7 @@
 let myDog = "Camper";
 let myDog = "Tommy";        //throws SyntaxError
 
-// "use strict"; enables Strict Mode, which catches common coding mistakes and "unsafe" actions
+// "use strict"; enables Strict Mode; catches common coding mistakes and "unsafe" actions
 // MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 "use strict";
 
@@ -80,3 +80,11 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 
 // if an arrow function has a single parameter
 const doubler = item => item * 2;
+
+// setting default parameters for the functions
+// parameter recieves default value when no argument is provided
+const greeting = (name = "Anonymous") => "Hello " + name;
+console.log(greeting("John"));
+console.log(greeting());
+
+//
