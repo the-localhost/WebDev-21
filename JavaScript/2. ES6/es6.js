@@ -1,6 +1,7 @@
 // let : a variable with the same name can only be declared once
-// similar to const (c++) and final (java)
+// let+let, var+let, let+var throws error but var+var doesn't
 let myDog = "Camper";
+let myDog = "Tommy";        //throws SyntaxError
 
 // "use strict"; enables Strict Mode, which catches common coding mistakes and "unsafe" actions
 "use strict";
@@ -31,3 +32,9 @@ let myDog = "Camper";
     }
     This code will throw ReferenceError
 */
+
+// once a variable is assigned with const, it cannot be reassigned
+// has all features of let except that it's read-only
+// common practice for naming variables: uppercase letters with underscore
+const FAV_PET = "Cats";
+FAV_PET = "Dogs";       //throws TypeError
