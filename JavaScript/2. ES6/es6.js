@@ -102,3 +102,14 @@ const sum = (...args) => {
     return args.reduce((a, b) => a + b, 0);
 }
 
+/** Spread Operator
+ *  allows us to expand arrays and other expressions in places where multiple parameters or elements are expected
+ *      const arr = [6, 89, 3, 45];
+ *      const maximus = Math.max(...arr);
+ *      ...arr returns an unpacked array
+ *  the spread operator only works in-place, like in an argument to a function or in an array literal
+ *      const arr1 = ['Hey', 'Hello'];
+ *      const spreaded = ...arr1;   // throws SyntaxError
+ *      const arr2 = [...arr1];     // works fine
+ */
+
