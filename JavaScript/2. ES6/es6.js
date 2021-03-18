@@ -73,3 +73,8 @@ const myFunc = () => {
 
 // when there is no function body, and only a return value
 const myFunc = () => "value";
+
+// arrow functions with parameters
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2);
+
