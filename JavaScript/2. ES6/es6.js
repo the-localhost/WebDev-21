@@ -75,8 +75,8 @@ const myFunc = () => {
 const myFunc = () => "value";
 
 // arrow functions with parameters
-const multiplier = (item, multi) => item * multi;
-multiplier(4, 2);
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
 
 // if an arrow function has a single parameter
 const doubler = item => item * 2;
