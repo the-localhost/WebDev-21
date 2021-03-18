@@ -4,6 +4,7 @@ let myDog = "Camper";
 let myDog = "Tommy";        //throws SyntaxError
 
 // "use strict"; enables Strict Mode, which catches common coding mistakes and "unsafe" actions
+// MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 "use strict";
 
 /* a variable declared with the let keyword inside a block, statement, or expression
@@ -48,6 +49,7 @@ console.log(s);
 
 // preventing object mutation using Object.freeze()
 // throws TypeError in strict mode
+// MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
 let obj = {
     name:"FreeCodeCamp",
     review:"Awesome"
@@ -56,3 +58,5 @@ Object.freeze(obj);
 obj.review = "bad";         // changes rejected
 obj.newProp = "Test";       //  without any error
 console.log(obj);
+
+//
