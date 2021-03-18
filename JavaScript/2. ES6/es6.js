@@ -70,3 +70,6 @@ const myFunc = () => {
     const myVar = "value";
     return myVar;
 }
+
+// when there is no function body, and only a return value
+const myFunc = () => "value";
