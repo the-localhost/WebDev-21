@@ -59,4 +59,10 @@ obj.review = "bad";         // changes rejected
 obj.newProp = "Test";       //  without any error
 console.log(obj);
 
+// defining functions anonymously
+const myFunc = function() {
+    const myVar = "value";
+    return myVar;
+}
+
 //
