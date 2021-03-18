@@ -65,4 +65,8 @@ const myFunc = function() {
     return myVar;
 }
 
-//
+// using arrow function syntax to define anonymous fns in ES6
+const myFunc = () => {
+    const myVar = "value";
+    return myVar;
+}
