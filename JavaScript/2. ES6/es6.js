@@ -78,3 +78,5 @@ const myFunc = () => "value";
 const multiplier = (item, multi) => item * multi;
 multiplier(4, 2);
 
+// if an arrow function has a single parameter
+const doubler = item => item * 2;
