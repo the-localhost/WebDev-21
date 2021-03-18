@@ -129,3 +129,4 @@ const user = {
     }
 };
 const { johnDoe: { age, email }} = user;
+const { johnDoe: { age: userAge, email: userEmail }} = user;    //assigning to variables w/ diff names
