@@ -116,3 +116,8 @@ const sum = (...args) => {
 // using destructuring assignment to extract values from objects in ES6
 const user = { name: 'John Doe', age: 34 };
 const { name, age } = user;     // in ES5-> const name = user.name; const age = user.age;
+
+// using destructuring assignment to assign variables from objects
+const user = { name: 'John Doe', age: 34 };
+const { name: userName, age: userAge } = user;  // variables are userName & userAge
+
