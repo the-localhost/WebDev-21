@@ -45,3 +45,14 @@ const s = [5, 6, 7];
 // s = [1, 2, 3];       // will throw TypeError
 s[2] = 45;
 console.log(s);
+
+// preventing object mutation using Object.freeze()
+// throws TypeError in strict mode
+let obj = {
+    name:"FreeCodeCamp",
+    review:"Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";         // changes rejected
+obj.newProp = "Test";       //  without any error
+console.log(obj);
