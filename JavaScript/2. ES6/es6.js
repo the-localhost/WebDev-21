@@ -198,3 +198,22 @@ const person = {
       return `Hello! My name is ${this.name}.`;
     }
 };
+
+/** Class syntax to define a constructor function
+ *  > just a syntax; not a full-fledged implementation of OOPs
+ *  > The constructor method is a special method for creating and initializing an object created with a class
+ *  > the class keyword declares a new function, to which a constructor is added
+ *  > This constructor is invoked when new is called to create a new object.
+ *  > UpperCamelCase should be used by convention for ES6 class names
+ */
+var SpaceShuttle = function(targetPlanet){  // ES5 code:
+    this.targetPlanet = targetPlanet;
+}
+var zeus = new SpaceShuttle('Jupiter');
+// -----------------------------------
+class SpaceShuttle {                        // equivalent ES6 code
+    constructor(targetPlanet) {
+      this.targetPlanet = targetPlanet;
+    }
+}
+const zeus = new SpaceShuttle('Jupiter');
