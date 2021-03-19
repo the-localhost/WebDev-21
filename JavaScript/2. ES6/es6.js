@@ -172,3 +172,12 @@ const person = {
 const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old.`;
 console.log(greeting);
+
+// concise object literal declarations using object property shorthand
+// eliminates redundancy. eg: older version code
+const getMousePosition = (x, y) => ({
+    x: x,
+    y: y
+});
+// ES6 concise declaration equivalent to above code
+const getMousePosition = (x, y) => ({ x, y });
