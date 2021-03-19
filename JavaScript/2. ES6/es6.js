@@ -111,6 +111,7 @@ const sum = (...args) => {
  *      const arr1 = ['Hey', 'Hello'];
  *      const spreaded = ...arr1;   // throws SyntaxError
  *      const arr2 = [...arr1];     // works fine
+ *  in simple terms, the spread operator unpacks all contents of an array into a comma-separated list
  */
 
 // using destructuring assignment to extract values from objects in ES6
@@ -130,3 +131,8 @@ const user = {
 };
 const { johnDoe: { age, email }} = user;
 const { johnDoe: { age: userAge, email: userEmail }} = user;    //assigning to variables w/ diff names
+
+// destructuring values from arrays
+const [a, b] = [1, 2, 3, 4, 5, 6];
+console.log(a, b);
+
