@@ -158,3 +158,17 @@ const stats = {
     average: 35.85
 };
 const half = ({max,min}) => (max + min) / 2.0; 
+
+/** TEMPLATE LITERALS
+ *  > allows us to create multi-line strings (saves inserting \n within strings)
+ *  > allows us to use string interpolation features to create strings
+ *  > backticks(`) used instead of quotes(' or ")
+ *  > placeholder using ${variable_name} syntax
+ */
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
+};
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+console.log(greeting);
