@@ -136,3 +136,6 @@ const { johnDoe: { age: userAge, email: userEmail }} = user;    //assigning to v
 const [a, b] = [1, 2, 3, 4, 5, 6];
 console.log(a, b);
 
+// destructing assignment allows us to choose which values to assign to variables
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
