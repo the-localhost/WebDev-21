@@ -139,3 +139,10 @@ console.log(a, b);
 // destructing assignment allows us to choose which values to assign to variables
 const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
 console.log(a, b, c);
+
+// destructuring assignment with the rest operator to reassign array elements
+// Note: The rest element only works correctly as the last variable in the list
+// Below code's result is similar to Array.prototype.slice()
+const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(a, b);
+console.log(arr);
