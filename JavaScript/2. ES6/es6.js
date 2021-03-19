@@ -181,3 +181,20 @@ const getMousePosition = (x, y) => ({
 });
 // ES6 concise declaration equivalent to above code
 const getMousePosition = (x, y) => ({ x, y });
+
+// concise declarative functions with ES6
+// removes the need of using keyword function when declaring inside object
+// older version code (ES5):
+const person = {
+    name: "Taylor",
+    sayHello: function() {
+      return `Hello! My name is ${this.name}.`;
+    }
+};
+// concise declaration with ES6
+const person = {
+    name: "Taylor",
+    sayHello() {
+      return `Hello! My name is ${this.name}.`;
+    }
+};
