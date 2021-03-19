@@ -146,3 +146,15 @@ console.log(a, b, c);
 const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
 console.log(a, b);
 console.log(arr);
+
+// destructuring assignment to pass an object as a function's parameters
+// below code only sends min and max inside the function instead of whole object
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+};
+const half = ({max,min}) => (max + min) / 2.0; 
