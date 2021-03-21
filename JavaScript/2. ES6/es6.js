@@ -268,3 +268,8 @@ export {add, subtract};
 // import allows us to choose which parts of a file or module to load
 import { add, subtract } from './math_functions.js';
 
+// using * to import everything from a file/module
+// when we wish to import all of a file's contents in current file
+import * as myMathModule from "./math_functions.js";
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
