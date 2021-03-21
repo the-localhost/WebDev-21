@@ -249,7 +249,7 @@ temp = thermos.temperature;
  *      <script type="module" src="filename.js"></script>
 */
 
-// using export to share a code block
+// using export to share a code block; named export
 // functions and variables can be shared
 // a common way:
 export const add = (x, y) => {
@@ -273,3 +273,16 @@ import { add, subtract } from './math_functions.js';
 import * as myMathModule from "./math_functions.js";
 myMathModule.add(2,3);
 myMathModule.subtract(5,3);
+
+/** creating an export fallback using export default
+ *  used if if only one value is being exported from a file
+ *  also used to create a fallback value for a file or module
+ *  we can only have one value be a default export in each module or file
+ * cannot use export default with var, let, or const
+*/
+export default function add(x, y) {
+    return x + y;
+}
+export default function(x, y) {     //anonymous function
+return x + y;
+}
