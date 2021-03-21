@@ -242,3 +242,9 @@ const thermos = new Thermostat(76);
 let temp = thermos.temperature;
 thermos.temperature = 26;
 temp = thermos.temperature;
+
+/** creating a module script
+ *  to use exporting/importing functionality
+ *  > create a script in your HTML document with a type of module
+ *      <script type="module" src="filename.js"></script>
+ */
