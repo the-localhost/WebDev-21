@@ -275,14 +275,18 @@ myMathModule.add(2,3);
 myMathModule.subtract(5,3);
 
 /** creating an export fallback using export default
- *  used if if only one value is being exported from a file
+ *  used if only one value is being exported from a file
  *  also used to create a fallback value for a file or module
  *  we can only have one value be a default export in each module or file
  * cannot use export default with var, let, or const
 */
-export default function add(x, y) {
+export default function add(x, y) { //named function (eg.1)
     return x + y;
 }
-export default function(x, y) {     //anonymous function
-return x + y;
+export default function(x, y) {     //anonymous function (eg.2)
+    return x + y;
 }
+
+// importing a default export
+// the imported value is not surrounded by curly braces ({})
+import anySuitableName from "./math_functions.js";
