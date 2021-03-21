@@ -247,7 +247,7 @@ temp = thermos.temperature;
  *  to use exporting/importing functionality
  *  > create a script in your HTML document with a type of module
  *      <script type="module" src="filename.js"></script>
- */
+*/
 
 // using export to share a code block
 // functions and variables can be shared
@@ -263,3 +263,8 @@ const subtract = (x, y) => {
     return x - y;
 }
 export {add, subtract};
+
+// reusing js code using import
+// import allows us to choose which parts of a file or module to load
+import { add, subtract } from './math_functions.js';
+
