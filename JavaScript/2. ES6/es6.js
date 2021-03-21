@@ -248,3 +248,18 @@ temp = thermos.temperature;
  *  > create a script in your HTML document with a type of module
  *      <script type="module" src="filename.js"></script>
  */
+
+// using export to share a code block
+// functions and variables can be shared
+// a common way:
+export const add = (x, y) => {
+    return x + y;
+}
+// another way to achieve same
+const add = (x, y) => {
+    return x + y;
+}
+const subtract = (x, y) => {
+    return x - y;
+}
+export {add, subtract};
