@@ -217,3 +217,28 @@ class SpaceShuttle {                        // equivalent ES6 code
     }
 }
 const zeus = new SpaceShuttle('Jupiter');
+
+/** Getters and Setters to control access to an object
+ *  > getter - a function to read object's private variable w/o direct access
+ *  > setter - a function to modify object's private variable data based on passed value
+ *  >  important because they hide internal implementation details
+ *  > convention to precede the name of a private variable with an underscore (_)
+ */
+class Thermostat {
+    constructor(temp){      // accepts Fahrenheit value
+      var celcius = (5.0/9)*(temp-32);
+      this._temp = celcius;
+    }
+    //getter to return celcius temperature
+    get temperature () {
+      return this._temp;
+    }
+    //setter to set celcius temperature
+    set temperature(updateTemp){
+      this._temp = updateTemp;
+    }
+}
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
