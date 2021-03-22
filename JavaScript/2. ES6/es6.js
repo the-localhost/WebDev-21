@@ -321,3 +321,12 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise.then(result => {
     // ...
 });
+
+/** handling a rejected proise with catch
+ *  > 'catch' method is used when out promise has been rejected
+ *  > executed immediately after a promise's reject method is called
+ *  > error is the argument passed in to the reject method
+*/
+myPromise.catch(error => {
+    // ...
+});
