@@ -290,3 +290,12 @@ export default function(x, y) {     //anonymous function (eg.2)
 // importing a default export
 // the imported value is not surrounded by curly braces ({})
 import anySuitableName from "./math_functions.js";
+
+/** JavaScript Promise
+ *  > used to make a promise to do something, usually asynchronously
+ *  > Promise is a constructor function, so new keyword is used to create one
+ *  > It takes a function, as its argument, with two parameters - resolve and reject
+*/
+const myPromise = new Promise((resolve, reject) => {
+    //... ...
+});
