@@ -313,3 +313,11 @@ const myPromise = new Promise((resolve, reject) => {
       reject("Promise was rejected");
     }
 });
+
+/** handling a fulfilled promise with then
+ *  > 'then' method is executed immediately after the promise is fulfilled with resolve
+ *  > 'result' comes from the argument given to the resolve method
+*/
+myPromise.then(result => {
+    // ...
+});
