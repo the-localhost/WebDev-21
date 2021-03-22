@@ -278,7 +278,7 @@ myMathModule.subtract(5,3);
  *  used if only one value is being exported from a file
  *  also used to create a fallback value for a file or module
  *  we can only have one value be a default export in each module or file
- * cannot use export default with var, let, or const
+ *  cannot use export default with var, let, or const
 */
 export default function add(x, y) { //named function (eg.1)
     return x + y;
@@ -298,4 +298,18 @@ import anySuitableName from "./math_functions.js";
 */
 const myPromise = new Promise((resolve, reject) => {
     //... ...
+});
+
+/** completing a promise using resolve and reject
+ *  > a promise has 3 states: pending, fulfilled and rejected
+ *  > resolve, reject - parameters given to promise argument to add ways to complete promise
+ *  > resolve - used when we want our promise to succeed
+ *  > reject - used when we want our promise to fail
+*/
+const myPromise = new Promise((resolve, reject) => {
+    if(/*condition here*/) {
+      resolve("Promise was fulfilled");
+    } else {
+      reject("Promise was rejected");
+    }
 });
