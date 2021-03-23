@@ -15,3 +15,9 @@ let secondString = "Hi, kevin";
 let regex = /Kevin/;
 let firstResult = regex.test(firstString);      // true
 let secondResult = regex.test(secondString);    // false
+
+// matching a literal string with different possibilities
+// using | operator (OR operator); matches patterns on either side of |
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; 
+let result = petRegex.test(petString);      //true
