@@ -20,4 +20,9 @@ let secondResult = regex.test(secondString);    // false
 // using | operator (OR operator); matches patterns on either side of |
 let petString = "James has a pet cat.";
 let petRegex = /dog|cat|bird|fish/; 
-let result = petRegex.test(petString);      //true
+let result = petRegex.test(petString);      // true
+
+// ignoring case while matching using i flag
+let myString = "FrEeWoRkShOp";
+let myRegex = /freeworkshop/i;
+let result = myRegex.test(myString);           // true
