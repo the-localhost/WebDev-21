@@ -48,7 +48,7 @@ let regex = /hu./ig;
 let result = testStr.match(regex);  // ["Huh", "hug", "hum", "hut"]
 
 /** Character Class : matching single character with multiple possibilities
- *  > allows us to define a group of characters we wish to match by placing them inside square ([ and ]) brackets
+ *  > allows us to define a group of characters we wish to match by placing them inside [ and ] using -
  */
 let myStr = "big bag bug bog";  // we don't want to match bog
 let regex = /b[aiu]g/g;
@@ -57,4 +57,12 @@ let result = myStr.match(regex);    // ["big", "bag", "bug"]
 // defining a range inside character set (or character class)
 let myStr = "cat bat mat";
 let regex = /[a-e]at/g;
+let result = myStr.match(regex);
+
+// using hyphen (-) to define number range
+let result = 'hello123456789'.match(/[0-6]/g);  // ["1", "2", "3", "4", "5", "6"]
+
+// combining range of letters and numbers in a single character set
+let myStr = "Blueberry 3.141592653s are delicious.";
+let regex = /[h-s2-6]/gi;
 let result = myStr.match(regex);
