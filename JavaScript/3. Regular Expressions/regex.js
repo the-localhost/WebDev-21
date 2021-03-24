@@ -5,6 +5,7 @@
 */
 
 // .test() method to test a regex
+// syntax:      /regex/.test('string');
 let myString = "Hello, World!";
 let myRegex = /Hello/;
 let result = myRegex.test(myString);        // true
@@ -26,3 +27,10 @@ let result = petRegex.test(petString);      // true
 let myString = "FrEeWoRkShOp";
 let myRegex = /freeworkshop/i;
 let result = myRegex.test(myString);           // true
+
+/** extracting matches using .match() method
+ *  syntax:     'string'.match(/regex/);
+*/
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex); 
