@@ -71,7 +71,12 @@ let result = myStr.match(regex);
  *  > a set of characters that we do not want to match
  *  > place a caret character (^) after the opening bracket and before the characters we don't want to match
  *  > for example, /[^aeiou]/gi matches all characters that are not a vowel (symbols also matched)
- */
- let myStr = "3 blind mice.";
- let regex = /[^0-9aeiou]/gi; 
- let result = myStr.match(regex);
+*/
+let myStr = "3 blind mice.";
+let regex = /[^0-9aeiou]/gi; 
+let result = myStr.match(regex);
+
+// matching characters which appear one or more times consecutively using +
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/gi;
+let result = difficultSpelling.match(myRegex);
