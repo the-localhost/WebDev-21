@@ -76,7 +76,12 @@ let myStr = "3 blind mice.";
 let regex = /[^0-9aeiou]/gi; 
 let result = myStr.match(regex);
 
-// matching characters which appear one or more times consecutively using +
+// matching characters which appear one or more times consecutively using + (plus)
 let difficultSpelling = "Mississippi";
 let myRegex = /s+/gi;
 let result = difficultSpelling.match(myRegex);
+
+// matching characters that occur zero or more times using * (asterisk)
+let myStr = "gooooooooal";
+let regex = /go*/;      // here * applies only to 'o' and not to 'go'
+let result = myStr.match(regex);        //  ["goooooooo"]
