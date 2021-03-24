@@ -39,3 +39,10 @@ let result = extractStr.match(codingRegex);
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/ig;        // i flag used to ignore cases
 let result = twinkleStar.match(starRegex);
+
+/** matching anything with wildcard period
+ *  > Wildcard character . (dot or period) matches any character
+*/
+let testStr = "Huh. I'll hug and hum a song in the hut."
+let regex = /hu./ig;
+let result = testStr.match(regex);  // ["Huh", "hug", "hum", "hut"]
