@@ -34,3 +34,8 @@ let result = myRegex.test(myString);           // true
 let extractStr = "Extract the word 'coding' from this string.";
 let codingRegex = /coding/;
 let result = extractStr.match(codingRegex); 
+
+// extracting all matches using g flag
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/ig;        // i flag used to ignore cases
+let result = twinkleStar.match(starRegex);
