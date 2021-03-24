@@ -66,3 +66,12 @@ let result = 'hello123456789'.match(/[0-6]/g);  // ["1", "2", "3", "4", "5", "6"
 let myStr = "Blueberry 3.141592653s are delicious.";
 let regex = /[h-s2-6]/gi;
 let result = myStr.match(regex);
+
+/** Negated Character Sets
+ *  > a set of characters that we do not want to match
+ *  > place a caret character (^) after the opening bracket and before the characters we don't want to match
+ *  > for example, /[^aeiou]/gi matches all characters that are not a vowel (symbols also matched)
+ */
+ let myStr = "3 blind mice.";
+ let regex = /[^0-9aeiou]/gi; 
+ let result = myStr.match(regex);
