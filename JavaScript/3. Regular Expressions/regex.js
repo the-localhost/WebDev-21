@@ -46,3 +46,11 @@ let result = twinkleStar.match(starRegex);
 let testStr = "Huh. I'll hug and hum a song in the hut."
 let regex = /hu./ig;
 let result = testStr.match(regex);  // ["Huh", "hug", "hum", "hut"]
+
+/** Character Class : matching single character with multiple possibilities
+ *  > allows us to define a group of characters we wish to match by placing them inside square ([ and ]) brackets
+ */
+let myStr = "big bag bug bog";  // we don't want to match bog
+let regex = /b[aiu]g/g;
+let result = myStr.match(regex);    // ["big", "bag", "bug"]
+
