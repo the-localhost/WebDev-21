@@ -54,3 +54,7 @@ let myStr = "big bag bug bog";  // we don't want to match bog
 let regex = /b[aiu]g/g;
 let result = myStr.match(regex);    // ["big", "bag", "bug"]
 
+// defining a range inside character set (or character class)
+let myStr = "cat bat mat";
+let regex = /[a-e]at/g;
+let result = myStr.match(regex);
