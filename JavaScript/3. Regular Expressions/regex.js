@@ -148,3 +148,9 @@ let result = movieName.match(numRegex).length;
 let movieName = "2001: A Space Odyssey";
 let noNumRegex = /\D/g;
 let result = movieName.match(noNumRegex).length;
+
+// matching whitespace using \s
+// similar to [ \r\t\n\f\v]
+let whiteSpace = "Whitespace. Whitespace everywhere!" 
+let spaceRegex = /\s/g; 
+let result = whiteSpace.match(spaceRegex);  // [" ", " "]
