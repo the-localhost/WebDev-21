@@ -154,3 +154,9 @@ let result = movieName.match(noNumRegex).length;
 let whiteSpace = "Whitespace. Whitespace everywhere!" 
 let spaceRegex = /\s/g; 
 let result = whiteSpace.match(spaceRegex);  // [" ", " "]
+
+// matching everything except whitespace using \S
+// similar to [^ \r\t\n\f\v]
+let whiteSpace = "Whitespace. Whitespace everywhere!" 
+let spaceRegex = /\s/g; 
+let result = whiteSpace.match(spaceRegex).length;  // 32
