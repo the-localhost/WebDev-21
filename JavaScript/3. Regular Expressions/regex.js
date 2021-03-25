@@ -85,3 +85,15 @@ let result = difficultSpelling.match(myRegex);
 let myStr = "gooooooooal";
 let regex = /go*/;      // here * applies only to 'o' and not to 'go'
 let result = myStr.match(regex);        //  ["goooooooo"]
+
+/** types of pattern matching
+ *  1) greedy : finds the longest possible part of a string that fits the regex pattern; default
+ *  2) lazy :  finds the smallest possible part of the string that satisfies the regex pattern; use ? character
+ */
+
+// finding match with lazy matching
+let myStr = 'titanic';
+let defaultRegex = /t[a-z]*i/;
+let lazyRegex = /t[a-z]*?i/;
+let result1 = myStr.match(defaultRegex);    // ["titani"]
+let result2 = myStr.match(lazyRegex);       // ["ti"]
