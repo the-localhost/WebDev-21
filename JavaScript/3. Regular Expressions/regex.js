@@ -99,10 +99,19 @@ let result1 = myStr.match(defaultRegex);    // ["titani"]
 let result2 = myStr.match(lazyRegex);       // ["ti"]
 
 /** matching beginning string patterns
- *  > caret (^) is used to search for patterns at the beginning of strings
+ *  > caret (^) is used to at the starting of the regex
 */
 let firstString = "Ricky is first and can be found."; 
 let firstRegex = /^Ricky/; 
 firstRegex.test(firstString);       // true
 let notFirst = "You can't find Ricky now."; 
 firstRegex.test(notFirst);          // false
+
+/** matching ending string patterns
+ *  > dollar/anchor sign ($) is used at the end of the regex
+*/
+let theEnding = "This is a never ending story"; 
+let storyRegex = /story$/; 
+storyRegex.test(theEnding);         // true
+let noEnding = "Sometimes a story will have to end"; 
+storyRegex.test(noEnding);          // false
