@@ -115,3 +115,17 @@ let storyRegex = /story$/;
 storyRegex.test(theEnding);         // true
 let noEnding = "Sometimes a story will have to end"; 
 storyRegex.test(noEnding);          // false
+
+/** Shorthand Character Classes
+ *  > shortcut versions of most common character classes
+ *  eg. [a-zA-z0-9_] can be replaced by \w      (lower,upper,number,underscore)
+*/
+let longHand = /[A-Za-z0-9_]+/; 
+let shortHand = /\w+/; 
+let numbers = "42"; 
+let varNames = "important_var"; 
+longHand.test(numbers);     // true
+shortHand.test(numbers);    // true
+longHand.test(varNames);    // true
+shortHand.test(varNames);   // true
+
