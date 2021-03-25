@@ -118,7 +118,8 @@ storyRegex.test(noEnding);          // false
 
 /** Shorthand Character Classes
  *  > shortcut versions of most common character classes
- *  eg. [a-zA-z0-9_] can be replaced by \w      (lower,upper,number,underscore)
+ *  \w  <->  [a-zA-z0-9_]      (lower,upper,number,underscore)
+ *  \W  <->  [^A-Za-z0-9_]      (opposite of \w)
 */
 let longHand = /[A-Za-z0-9_]+/; 
 let shortHand = /\w+/; 
