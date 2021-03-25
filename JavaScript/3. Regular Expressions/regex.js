@@ -97,3 +97,12 @@ let defaultRegex = /t[a-z]*i/;
 let lazyRegex = /t[a-z]*?i/;
 let result1 = myStr.match(defaultRegex);    // ["titani"]
 let result2 = myStr.match(lazyRegex);       // ["ti"]
+
+/** matching beginning string patterns
+ *  > caret (^) is used to search for patterns at the beginning of strings
+*/
+let firstString = "Ricky is first and can be found."; 
+let firstRegex = /^Ricky/; 
+firstRegex.test(firstString);       // true
+let notFirst = "You can't find Ricky now."; 
+firstRegex.test(notFirst);          // false
