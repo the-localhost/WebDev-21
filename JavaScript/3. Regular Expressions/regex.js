@@ -119,7 +119,8 @@ storyRegex.test(noEnding);          // false
 /** Shorthand Character Classes
  *  > shortcut versions of most common character classes
  *  \w  <->  [a-zA-z0-9_]      (lower,upper,number,underscore)
- *  \W  <->  [^A-Za-z0-9_]      (opposite of \w)
+ *  \W  <->  [^A-Za-z0-9_]     (opposite of \w)
+ *  \d  <->  [0-9]             (single character of any number) 
 */
 let longHand = /[A-Za-z0-9_]+/; 
 let shortHand = /\w+/; 
@@ -130,3 +131,14 @@ shortHand.test(numbers);    // true
 longHand.test(varNames);    // true
 shortHand.test(varNames);   // true
 
+// matching everything but numbers and letters
+let shortHand = /\W/; 
+let numbers = "42%"; 
+let sentence = "Coding!"; 
+numbers.match(shortHand);   // ["%"]
+sentence.match(shortHand);  // ["!"]
+
+// matching all numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g;
+let result = movieName.match(numRegex).length;
