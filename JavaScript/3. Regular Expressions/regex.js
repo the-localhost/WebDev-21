@@ -121,6 +121,7 @@ storyRegex.test(noEnding);          // false
  *  \w  <->  [a-zA-z0-9_]      (lower,upper,number,underscore)
  *  \W  <->  [^A-Za-z0-9_]     (opposite of \w)
  *  \d  <->  [0-9]             (single character of any number) 
+ *  \D  <->  [^0-9]            (all non-numbers)
 */
 let longHand = /[A-Za-z0-9_]+/; 
 let shortHand = /\w+/; 
@@ -142,3 +143,8 @@ sentence.match(shortHand);  // ["!"]
 let movieName = "2001: A Space Odyssey";
 let numRegex = /\d/g;
 let result = movieName.match(numRegex).length;
+
+// matching all non-numbers
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g;
+let result = movieName.match(noNumRegex).length;
