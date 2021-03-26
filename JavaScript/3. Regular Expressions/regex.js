@@ -187,3 +187,13 @@ let multipleHA = /ha{3}h/;
 multipleHA.test(A2);        // false
 multipleHA.test(A3);        // true
 multipleHA.test(A4);        // false
+
+/** checking for all or none with ?
+ *  > to check possible existence of an element
+ *  > checks for zero or one of the preceding element
+*/
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+rainbowRegex.test(american);        // true
+rainbowRegex.test(british);         // true
