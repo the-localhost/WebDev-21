@@ -160,3 +160,15 @@ let result = whiteSpace.match(spaceRegex);  // [" ", " "]
 let whiteSpace = "Whitespace. Whitespace everywhere!" 
 let spaceRegex = /\s/g; 
 let result = whiteSpace.match(spaceRegex).length;  // 32
+
+/** specifying upper and lower number of matches 
+ *  > to match a certain range of patterns
+ *  > specified with quantity specifiers { and }
+ *  > {lower_bound, upper_bound}
+*/
+let A4 = "aaaah";
+let A2 = "aah";
+let multipleA = /a{3,5}h/;
+multipleA.test(A4);     // true
+multipleA.test(A2);     // false
+
