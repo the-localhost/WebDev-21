@@ -204,6 +204,13 @@ rainbowRegex.test(british);         // true
  *  > -ve lookahead: makes sure the element in the search pattern is not there; (?!...) where ... is pattern
 */
 // matches 3-6 characters with two consecutive digits
- let sampleWord = "astronaut";
- let pwRegex = /(?=\w{5,})(?=\D+\d{2})/; 
- let result = pwRegex.test(sampleWord);
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D+\d{2})/; 
+let result = pwRegex.test(sampleWord);
+
+// checking for mixed grouping of characters using ()
+let testStr1 = "Pumpkin";
+let testStr2 = "Penguin";
+let testRegex = /P(engu|umpk)in/;
+testRegex.test(testStr1);       // true
+testRegex.test(testStr2);       // true
