@@ -197,3 +197,13 @@ let british = "colour";
 let rainbowRegex= /colou?r/;
 rainbowRegex.test(american);        // true
 rainbowRegex.test(british);         // true
+
+/** positive and negative lookaheads
+ *  > Lookahead: pattern that tells JS to look-ahead in string to check for pattern further along
+ *  > +ve lookahead: makes sure that element in the search pattern is there, but won't actually match it;(?=...)
+ *  > -ve lookahead: makes sure the element in the search pattern is not there; (?!...) where ... is pattern
+*/
+// matches 3-6 characters with two consecutive digits
+ let sampleWord = "astronaut";
+ let pwRegex = /(?=\w{5,})(?=\D+\d{2})/; 
+ let result = pwRegex.test(sampleWord);
