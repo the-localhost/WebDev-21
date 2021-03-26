@@ -172,3 +172,9 @@ let multipleA = /a{3,5}h/;
 multipleA.test(A4);     // true
 multipleA.test(A2);     // false
 
+// specifying only the lower number of matches
+let A2 = "haah";
+let A100 = "h" + "a".repeat(100) + "h";
+let multipleA = /ha{3,}h/;
+multipleA.test(A2);     // false
+multipleA.test(A100);   // true
