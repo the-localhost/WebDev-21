@@ -227,3 +227,13 @@ let reRegex = /^(\d+)\s\1\s\1/$;
 let result1 = reRegex.test(repeatNum1);     // true
 let result2 = reRegex.test(repeatNum2);     // false
 let result3 = reRegex.test(repeatNum3);     // false
+
+/** Searching and Replacing text in a string
+ *  > .replace() is used to search and replace text in a string
+ *  > two arguments:
+ *       1st: regex pattern we want to search for 
+ *       2nd: string to replace the match or a fn to do something
+*/
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");     // "The sky is blue."
