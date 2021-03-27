@@ -214,3 +214,16 @@ let testStr2 = "Penguin";
 let testRegex = /P(engu|umpk)in/;
 testRegex.test(testStr1);       // true
 testRegex.test(testStr2);       // true
+
+/** reusing patterns using capture groups
+ *  > useful when search patterns occur multiple times
+ *  > create capture groups using () and use \ and a number
+ *  > number starts with 1 and \n specifies where repeat string will appear
+*/
+let repeatNum1 = "42 42 42";
+let repeatNum2 = "42 42 43";
+let repeatNum3 = "42 42 42 42";
+let reRegex = /^(\d+)\s\1\s\1/$;
+let result1 = reRegex.test(repeatNum1);     // true
+let result2 = reRegex.test(repeatNum2);     // false
+let result3 = reRegex.test(repeatNum3);     // false
