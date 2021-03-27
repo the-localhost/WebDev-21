@@ -237,3 +237,11 @@ let result3 = reRegex.test(repeatNum3);     // false
 let wrongText = "The sky is silver.";
 let silverRegex = /silver/;
 wrongText.replace(silverRegex, "blue");     // "The sky is blue."
+
+/** Accessing capture groups in replacement strings
+ *  > using dollar signs with group numbers
+*/
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
+let replaceText = "$3 $2 $1"; 
+let result = str.replace(fixRegex, replaceText);    "three two one"
