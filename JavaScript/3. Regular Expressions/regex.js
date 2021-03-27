@@ -1,6 +1,6 @@
 /** REGULAR EXPRESSIONS
  *  > Regular expressions are used in programming languages to match parts of strings
- *  > we create patterns to help you do that matching
+ *  > we create patterns to help us do that matching
  *  > quote marks are not required within the regular expression
 */
 
@@ -245,3 +245,9 @@ let str = "one two three";
 let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
 let replaceText = "$3 $2 $1"; 
 let result = str.replace(fixRegex, replaceText);    "three two one"
+
+// removing whitespace from start and end
+// Note: this can be achieved using String.prototype.trim() method
+let hello = "   Hello, World!  ";
+let wsRegex = /^(\s+)([\w]+,\s[\w]+!)(\s+)$/;
+let result = hello.replace(wsRegex, "$2");      // "Hello World!"
