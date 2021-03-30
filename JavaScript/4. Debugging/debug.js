@@ -77,3 +77,20 @@ let base = 2;
 let exp = 3;
 let power = raiseToPower(exp, base);    // correct: raiseToPower(base, exp)
 
+/** catching off by one errors (OBOEs) when indexing
+ *  > when we try to get specific index of a string/array
+ *  > and give index as length of that string/array, while looping or otherwise
+ *  > this may throw 'index out of range' reference error or may print undefined.
+ *  > may also occur while using array/string methods
+*/
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let len = alphabet.length;
+for (let i = 0; i <= len; i++) {        // error at i==len
+    console.log(alphabet[i]);
+}
+for (let j = 1; j < len; j++) {         // missed value at i=0
+    console.log(alphabet[j]);
+}
+for (let k = 0; k < len; k++) {         // correct
+    console.log(alphabet[k]);
+}
