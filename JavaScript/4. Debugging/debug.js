@@ -41,3 +41,16 @@ console.log(`Net working capital is: ${netWorkingCapital}`);
 const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";   // correct
 const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";      // correct
 const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';          // incorrect
+
+// assignment operator instead of equality operator
+// 'falsy' values: false, 0, "" (an empty string), NaN, undefined, and null
+// every value except falsy values evaluate to true
+let x = 7;
+let y = 9;
+let result = "to come";
+if(x = y) {         // correct: x == y
+  result = "Equal!";
+} else {
+  result = "Not equal!";
+}
+console.log(result);
