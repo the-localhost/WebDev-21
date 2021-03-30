@@ -13,3 +13,11 @@ console.log(a);
 let sumAB = a + b;
 console.log(sumAB);
 
+// using typeof to check the type of variable
+// when working with different data types; especially when external data is accessed in JSON form
+let seven = 7;
+let three = "3";
+console.log(seven + three);
+console.log(typeof seven);
+console.log(typeof three);
+
