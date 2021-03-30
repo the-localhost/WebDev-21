@@ -94,3 +94,35 @@ for (let j = 1; j < len; j++) {         // missed value at i=0
 for (let k = 0; k < len; k++) {         // correct
     console.log(alphabet[k]);
 }
+
+/** using caution when reinitializing variables inside a loop
+ *  > when variables either should be reinitialized, and aren't, or vice versa
+ *  > we may accidentally reset the variable being used for the terminal condition, causing an infinite loop
+ */
+function zeroArray(m, n) {
+    // Creates a 2-D array with m rows and n columns of zeroes
+    let newArray = [];
+    let row = [];
+    for (let i = 0; i < m; i++) {
+      // Adds the m-th row into newArray
+      for (let j = 0; j < n; j++) {
+        // Pushes n zeroes into the current row to create the columns
+        row.push(0);
+      }
+      // Pushes the current row, which now has n zeroes in it, to the array
+      newArray.push(row);
+    }
+    return newArray;
+}
+let matrix = zeroArray(3, 2);
+console.log(matrix);
+
+/** preventing infinite loops with a valid terminal condition
+ *  > terminal condition tells the program when to break out of the loop code
+ *  > loop runs infinitely if terminal condition is not reached, crashing/freezing the browser
+*/
+function myFunc() {
+    for (let i = 1; i != 4; i += 2) {
+      console.log("Still going!");
+    }
+}
