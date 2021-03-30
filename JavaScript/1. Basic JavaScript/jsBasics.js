@@ -448,7 +448,7 @@ function testElse(val) {
 testElse(4);
 
 /** ELSE IF STATEMENTS
- *  to address multiple conditions by chahining if statements with else if statements
+ *  to address multiple conditions by chaining if statements with else if statements
  */
 function testElseIf(val) {
     if (val > 10) {
