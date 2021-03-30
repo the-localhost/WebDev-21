@@ -63,5 +63,17 @@ console.log(result);
 function myFunction() {
     return "You rock!";
 }
-let varOne = myFunction;
-let varTwo = myFunction();
+let varOne = myFunction;        // [Function: myFunction]
+let varTwo = myFunction();      // You rock!
+
+/** arguments passed in wrong order when calling a function
+ *  > if the arguments are of different types, it'll likely throw a runtime error
+ *  > if the arguments are of same type, the logic won't make sense
+*/
+function raiseToPower(b, e) {
+    return Math.pow(b, e);
+}
+let base = 2;
+let exp = 3;
+let power = raiseToPower(exp, base);    // correct: raiseToPower(base, exp)
+
