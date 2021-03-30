@@ -35,3 +35,9 @@ console.log(`Net working capital is: ${netWorkingCapital}`);
  *      immediately include closing match, move the cursor back and continue coding
  *  > console can show different errors based on logics; generally include SyntaxError
 */
+
+// mixed usage of single and double quotes
+// backslash can be used to escape quotes inside string
+const grouchoContraction = "I've had a perfectly wonderful evening, but this wasn't it.";   // correct
+const quoteInString = "Groucho Marx once said 'Quote me as saying I was mis-quoted.'";      // correct
+const uhOhGroucho = 'I've had a perfectly wonderful evening, but this wasn't it.';          // incorrect
