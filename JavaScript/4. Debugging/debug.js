@@ -54,3 +54,14 @@ if(x = y) {         // correct: x == y
   result = "Not equal!";
 }
 console.log(result);
+
+/** missing opening and closing parenthesis after a function call
+ *  > forgetting to include () while calling a fn w/ no args 
+ *  > this assigns fn reference instead of return value if assigned to a var
+ *  > can be debugged by logging var value or its type
+*/
+function myFunction() {
+    return "You rock!";
+}
+let varOne = myFunction;
+let varTwo = myFunction();
