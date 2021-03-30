@@ -1,11 +1,10 @@
 <script>
-    'use strict';
-let obj = {
-  name:"FreeCodeCamp",
-  review:"Awesome"
-};
-Object.freeze(obj);
-obj.review = "bad";
-obj.newProp = "Test";
-console.log(obj);
+let repeatStr = "regex regex";
+let repeatRegex = /(\w+)\s\2/;
+let res = repeatRegex.test(repeatStr);
+let result = repeatStr.match(repeatRegex);
+//let result = ohRegex.test(ohStr);
+console.log(res);
+console.log(result);
 </script>
+
