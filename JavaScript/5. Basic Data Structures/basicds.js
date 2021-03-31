@@ -44,3 +44,15 @@ let twentyThree = 'XXIII';
 let romanNumerals = ['XXI', 'XXII'];
 romanNumerals.unshift('XIX', 'XX');     // ['XIX', 'XX', 'XXI', 'XXII']
 romanNumerals.push(twentyThree);        // ['XIX', 'XX', 'XXI', 'XXII', 'XXIII']
+
+/** removing items from an array using .pop() and .shift()
+ *  > pop() :   removes an element from the end of an array
+ *  > shift() :  removes an element from the beginning
+ *  Note: neither method takes parameters, and each only allows an array to be modified by a single element at a time
+*/
+function popShift(arr) {
+    let popped = arr.pop();
+    let shifted = arr.shift();
+    return [shifted, popped];
+}
+console.log(popShift(['challenge', 'is', 'not', 'complete']));  // ['challenge', 'complete']
