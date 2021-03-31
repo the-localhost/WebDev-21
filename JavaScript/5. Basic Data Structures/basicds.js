@@ -108,3 +108,13 @@ function spreadOut() {
     return sentence;
 }
 console.log(spreadOut());       // [ 'learning', 'to', 'code', 'is', 'fun' ]
+
+/** checking for the presence of an element using indexOf()
+ *  > quickly and easily check for the presence of an element on an array
+ *  >  indexOf() takes an element as a parameter
+ *  > returns the position/index of the element or -1 if the element doesn't exist on the array
+*/
+let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+fruits.indexOf('dates');            // -1
+fruits.indexOf('oranges');          // 2
+fruits.indexOf('pears');            // 1
