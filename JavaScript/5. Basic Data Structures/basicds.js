@@ -159,3 +159,19 @@ tekkenCharacter['hair color'] = 'dyed orange';      // property name with space
 const eyes = 'eye color';
 tekkenCharacter[eyes] = 'brown';                    // property name using variable
 console.log(tekkenCharacter);
+
+/** modifying an object nested within an object
+ *  > object properties can be nested to an arbitrary depth
+ *  > the values can be any type of data, including arrays and other objects
+ *  > chain the dot/bracket notations to refer the property to be modified
+*/
+let userActivity = {
+    id: 23894201352,
+    date: 'January 1, 2017',
+    data: {
+      totalUsers: 51,
+      online: 42
+    }
+};
+userActivity.data.online = 45;
+console.log(userActivity);
