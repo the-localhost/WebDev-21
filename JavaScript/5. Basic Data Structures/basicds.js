@@ -88,4 +88,15 @@ let todaysWeather = weatherConditions.slice(1, 3);
 console.log(weatherConditions);         // ['rain', 'snow', 'sleet', 'hail', 'clear']
 console.log(todaysWeather);             // ['snow', 'sleet']
 
-// 
+/** copying array using spread operator
+ *  > easily copy all of an array's elements, in order, with a simple and highly readable syntax
+*/
+function copyMachine(arr, num) {
+    let newArr = [];
+    while (num >= 1) {
+      newArr.push(...arr);
+      num--;
+    }
+    return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
