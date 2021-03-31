@@ -85,5 +85,7 @@ console.log(numbers);       // [10, 11, 12, 13, 14, 15]
 */
 let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
 let todaysWeather = weatherConditions.slice(1, 3);
-console.log(weatherConditions);         // ['rain', 'hail', 'clear']
+console.log(weatherConditions);         // ['rain', 'snow', 'sleet', 'hail', 'clear']
 console.log(todaysWeather);             // ['snow', 'sleet']
+
+// 
