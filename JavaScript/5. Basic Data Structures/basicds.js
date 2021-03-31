@@ -267,3 +267,29 @@ let users = {
     }
 }
 console.log(countOnline(users));    // 1
+
+/** generating an array of all object keys with Object.keys()
+ *  > there will be no specific order to the entries in the array
+*/
+let users = {
+    Alan: {
+      age: 27,
+      online: false
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: false
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+};
+function getArrayOfUsers(obj) {
+    return Object.keys(obj);
+}
+console.log(getArrayOfUsers(users));
