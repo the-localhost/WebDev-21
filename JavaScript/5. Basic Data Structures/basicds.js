@@ -35,3 +35,12 @@ let complexArray = [
 let ourArray = ["a", "b", "c"];
 let ourVariable = ourArray[0];      // retrieving
 ourArray[1] = "not b anymore";      // setting
+
+/** adding items to an array using .push() and .unshift()
+ *  > push() : adds elements to the end of an array
+ *  > unnshift() : adds elements to the beginning
+*/
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+romanNumerals.unshift('XIX', 'XX');     // ['XIX', 'XX', 'XXI', 'XXII']
+romanNumerals.push(twentyThree);        // ['XIX', 'XX', 'XXI', 'XXII', 'XXIII']
