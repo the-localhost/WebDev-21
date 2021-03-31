@@ -30,3 +30,8 @@ let complexArray = [
       }
     ]
 ];
+
+// accessing an array's content using bracket notation
+let ourArray = ["a", "b", "c"];
+let ourVariable = ourArray[0];      // retrieving
+ourArray[1] = "not b anymore";      // setting
