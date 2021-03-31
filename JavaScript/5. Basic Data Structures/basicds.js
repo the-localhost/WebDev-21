@@ -118,3 +118,18 @@ let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
 fruits.indexOf('dates');            // -1
 fruits.indexOf('oranges');          // 2
 fruits.indexOf('pears');            // 1
+
+/** iterating through an array's all items using for loop
+ *  > JS offers different built-in methods: every(), forEach(), map(), etc.
+ *  > the most flexible technique which offers us the greatest amount of control is a simple for loop
+*/
+function filteredArray(arr, elem) {     // removes all nested arrays in arr with elem present in it
+    let newArr = [];
+    for(let i=0; i<arr.length; i++){
+      let curr = arr[i];
+      if(curr.indexOf(elem)==-1)
+      newArr.push(curr);
+    }
+    return newArr;
+}
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
