@@ -133,3 +133,9 @@ function filteredArray(arr, elem) {     // removes all nested arrays in arr with
     return newArr;
 }
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+// creating complex multi-dimensional arrays
+// arrays can contain an infinite depth of arrays that can contain other arrays
+let myNestedArray = [
+    ['iterate', 1.3849, 7, '8.4876', ['deep', ['deeper', ['deepest']]], 'depth']
+];
