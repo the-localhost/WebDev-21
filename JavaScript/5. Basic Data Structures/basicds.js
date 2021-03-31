@@ -241,3 +241,29 @@ function isEveryoneHere(obj) {
     return allPresent;
 }
 console.log(isEveryoneHere(users));     // true
+
+/** iterating through the keys of an object
+ *  > done using for...in statement of javascript
+ *  > NOTE: Objects do not maintain an ordering to stored keys like arrays do
+*/
+function countOnline(usersObj) {
+    var onlineUsers = 0;
+    for(let user in usersObj){
+      if(usersObj[user].online==true){
+        onlineUsers++;
+      }
+    }
+    return onlineUsers;
+}
+let users = {
+    Alan: {
+      online: false
+    },
+    Jeff: {
+      online: true
+    },
+    Sarah: {
+      online: false
+    }
+}
+console.log(countOnline(users));    // 1
