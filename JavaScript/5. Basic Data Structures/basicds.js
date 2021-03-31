@@ -94,9 +94,17 @@ console.log(todaysWeather);             // ['snow', 'sleet']
 function copyMachine(arr, num) {
     let newArr = [];
     while (num >= 1) {
-      newArr.push(...arr);
+      newArr.push([...arr]);
       num--;
     }
     return newArr;
 }
 console.log(copyMachine([true, false, true], 2));
+
+// combining arrays using spread operator
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun'];
+    return sentence;
+}
+console.log(spreadOut());       // [ 'learning', 'to', 'code', 'is', 'fun' ]
