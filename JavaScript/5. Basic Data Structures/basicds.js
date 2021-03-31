@@ -191,3 +191,20 @@ function checkInventory(scannedItem) {      // scannedItem may not be known befo
 return foods[scannedItem];
 }
 console.log(checkInventory("apples"));      // 25
+
+/** removing object properties using delete keyword
+ *  > objects provide a flexible, intuitive way to structure data, AND very fast lookup time
+ *  > 
+*/ 
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+};
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+console.log(foods);     // { apples: 25, bananas: 13, grapes: 35 }
