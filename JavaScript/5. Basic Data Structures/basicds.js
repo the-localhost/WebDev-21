@@ -56,3 +56,15 @@ function popShift(arr) {
     return [shifted, popped];
 }
 console.log(popShift(['challenge', 'is', 'not', 'complete']));  // ['challenge', 'complete']
+
+/** removing items using splice()
+ *  > removes any number of consecutive elements from anywhere in an array
+ *  > parameters: 
+ *      > 1st : represents the index on the array from which to begin removing element
+ *      > 2nd :  indicates the number of elements to delete
+ *  > modiffies the array and returns new array containing deleted elements
+*/
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+arr.splice(1, 4);
+console.log(arr);   // [2, 5, 2, 1]
+
