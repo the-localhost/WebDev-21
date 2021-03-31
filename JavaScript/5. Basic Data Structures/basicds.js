@@ -2,6 +2,8 @@
  *  > multiple ways to store and access data
 */
 
+////// ARRAYS //////
+
 // using an array to store a collection of data
 // one-dimensional array: can contain boolean/string/numbers & other valid JS datatypes
 let simpleArray = ['one', 2, 'three', true, false, undefined, null];
@@ -139,3 +141,21 @@ console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 let myNestedArray = [
     ['iterate', 1.3849, 7, '8.4876', ['deep', ['deeper', ['deepest']]], 'depth']
 ];
+
+
+////// OBJECTS //////
+
+/** adding key-value pairs to js objects
+ *  > objects are pieces of data (values) mapped to unique identifiers called properties (keys)
+ *  > to add an additional property, use dot notation or bracket notation
+*/
+const tekkenCharacter = {
+    player: 'Hwoarang',
+    fightingStyle: 'Tae Kwon Doe',
+    human: true
+};
+tekkenCharacter.origin = 'South Korea';
+tekkenCharacter['hair color'] = 'dyed orange';      // property name with space
+const eyes = 'eye color';
+tekkenCharacter[eyes] = 'brown';                    // property name using variable
+console.log(tekkenCharacter);
