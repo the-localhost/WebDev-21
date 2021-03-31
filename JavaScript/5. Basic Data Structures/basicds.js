@@ -208,3 +208,36 @@ delete foods.oranges;
 delete foods.plums;
 delete foods.strawberries;
 console.log(foods);     // { apples: 25, bananas: 13, grapes: 35 }
+
+/** checking if an object has a property
+ *  > Two ways: 
+ *      > hasOwnProperty() method
+ *      > using the keyword 'in'
+*/
+let users = {
+    Alan: {
+      age: 27,
+      online: true
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: true
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+};
+function isEveryoneHere(obj) {
+    let alan = obj.hasOwnProperty('Alan');
+    let jeff = obj.hasOwnProperty('Jeff');
+    let sarah = 'Sarah' in obj;                 // using 'in' keyword
+    let ryan = 'Ryan' in obj;
+    let allPresent = alan && jeff && sarah && ryan;
+    return allPresent;
+}
+console.log(isEveryoneHere(users));     // true
