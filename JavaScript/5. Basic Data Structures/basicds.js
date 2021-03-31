@@ -62,7 +62,7 @@ console.log(popShift(['challenge', 'is', 'not', 'complete']));  // ['challenge',
  *  > parameters: 
  *      > 1st : represents the index on the array from which to begin removing element
  *      > 2nd :  indicates the number of elements to delete
- *  > modiffies the array and returns new array containing deleted elements
+ *  > modifies the array and returns new array containing deleted elements
 */
 const arr = [2, 4, 5, 1, 7, 5, 2, 1];
 arr.splice(1, 4);
@@ -76,3 +76,14 @@ const startIndex = 3;
 const amountToDelete = 1;
 numbers.splice(startIndex, amountToDelete, 13, 14);
 console.log(numbers);       // [10, 11, 12, 13, 14, 15]
+
+/** copying array items using slice()
+ *  > copies or extracts a given number of elements to a new array, leaving the array it is called upon untouched
+ *  > parameters:
+ *      > 1st : the index at which to begin extraction (included)
+ *      > 2nd : the index at which to stop extraction (excluded)
+*/
+let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+let todaysWeather = weatherConditions.slice(1, 3);
+console.log(weatherConditions);         // ['rain', 'hail', 'clear']
+console.log(todaysWeather);             // ['snow', 'sleet']
