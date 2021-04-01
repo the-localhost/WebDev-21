@@ -117,3 +117,12 @@ function titleCase(str) {
   return res;
 }
 titleCase("I'm a little tea pot");    // I'm A Little Tea Pot
+
+// copying each elem of arr1 into arr2 at given index
+function frankenSplice(arr1, arr2, n) {
+  var arr3 = [...arr2];
+  arr3.splice(n, 0, ...arr1);
+  console.log(arr3);
+  return arr3;
+}
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
