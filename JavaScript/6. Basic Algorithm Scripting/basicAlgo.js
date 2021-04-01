@@ -63,3 +63,14 @@ function confirmEnding(str, target) {
     return true;
 }
 console.log(confirmEnding("Bastian", "n"));
+
+// repeat a string
+function repeatStringNumTimes(str, num) {
+  let res = "";
+  if(num<=0) return res;
+  for(let i=0; i<num; i++){
+    res+=str;
+  }
+  return res;
+}
+repeatStringNumTimes("abc", 3);
