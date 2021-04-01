@@ -99,3 +99,21 @@ function booWho(bool) {
   return (typeof bool)==(typeof true);
 }
 booWho(null);
+
+// title case a sentence
+function titleCase(str) {
+  str = str.toLowerCase();
+  let words = str.match(/([\w'-])+/g);
+  let res = '';
+  for(let i = 0; i<words.length; i++){
+    let word = words[i];
+    res += word[0].toUpperCase();
+    for(let j = 1; j<word.length; j++){
+      res+=word[j];
+    }
+    if(i!=words.length-1) res += " ";
+  }
+  console.log(res);
+  return res;
+}
+titleCase("I'm a little tea pot");    // I'm A Little Tea Pot
