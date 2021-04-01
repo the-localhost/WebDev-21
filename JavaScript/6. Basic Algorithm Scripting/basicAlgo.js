@@ -25,3 +25,15 @@ function factorialize(num) {
   return num*factorialize(num-1);
 }
 factorialize(5);        // 120
+
+// finding the longest word in a string
+function findLongestWordLength(str) {
+    let words = str.match(/\w+/g);
+    let maxLength = 0;
+    for(let word in words){
+      let len = words[word].length;
+      if(len>maxLength) maxLength = len;
+    }
+    return maxLength;
+}
+console.log(findLongestWordLength("May the force be with you"));        // 5
