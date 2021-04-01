@@ -93,3 +93,9 @@ function findElement(arr, func) {
   return undefined;
 }
 findElement([1, 2, 3, 4], num => num % 2 === 0);    // 2
+
+// check if value is classified as boolean primitive
+function booWho(bool) {
+  return (typeof bool)==(typeof true);
+}
+booWho(null);
