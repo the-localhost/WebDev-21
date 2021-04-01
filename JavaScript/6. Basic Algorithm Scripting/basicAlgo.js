@@ -85,3 +85,11 @@ function truncateString(str, num) {
   return res+'...';
 }
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));  // A-tisket...
+
+// find first element to pass truth test (func(x))
+function findElement(arr, func) {
+  for(let i=0; i<arr.length; i++)
+    if(func(arr[i])) return arr[i];
+  return undefined;
+}
+findElement([1, 2, 3, 4], num => num % 2 === 0);    // 2
