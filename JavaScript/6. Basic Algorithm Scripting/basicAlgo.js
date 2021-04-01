@@ -51,3 +51,15 @@ function largestOfFour(arr) {
     return largestArr;
 }
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);        // [5, 27, 39, 1001]
+
+// check if str ends with target string
+function confirmEnding(str, target) {
+    let s = str.length;
+    let t = target.length;
+    if(s<t) return false;       // target can't be smaller than str
+    for(let i = s-t; i<s; i++){
+        if(str[i]!=target[i-s+t]) return false;
+    }
+    return true;
+}
+console.log(confirmEnding("Bastian", "n"));
