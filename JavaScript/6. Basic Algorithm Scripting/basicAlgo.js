@@ -164,3 +164,19 @@ function mutation(arr) {
   return true;
 }
 mutation(["hello", "hey"]);
+
+// splitting array into groups of given size
+function chunkArrayInGroups(arr, size) {
+  let res = [];
+  for(let i=0; i<arr.length;){
+    let ar = [arr[i]];
+    i++;
+    while(i<arr.length){
+      if(i%size==0) break;
+      ar.push(arr[i++]);
+    }
+    res.push(ar);
+  }
+  return res;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);    // [["a", "b"], ["c", "d"]]
