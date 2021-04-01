@@ -126,3 +126,18 @@ function frankenSplice(arr1, arr2, n) {
   return arr3;
 }
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// removing all falsy values from an array
+// falsy values: false, null, 0, "", undefined, and NaN
+// NOTE: In JS, nothing is equal to NaN. NaN is not even equal to itself. 
+// We can use Number.isNaN(var) to check if a variable is NaN. BUT if(var1==NaN) is wrong way
+function bouncer(arr) {
+  let res = [];
+  for(let i in arr){
+    if(arr[i]){
+      res.push(arr[i]);
+    }
+  }
+  return res;
+}
+bouncer([7, "ate", "", false, 9]);  // [7, "ate", 9]
