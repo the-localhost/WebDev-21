@@ -8,3 +8,13 @@ function convertToF(celsius) {
     return fahrenheit;
 }
 convertToF(30);
+
+// reversing a string
+function reverseString(str) {
+    let strArr = [...str];
+    let newStr = '';
+    for(let i = strArr.length-1; i>=0; i--)
+        newStr += strArr[i];
+    return newStr;
+}
+console.log(reverseString("hello"));        // olleh
