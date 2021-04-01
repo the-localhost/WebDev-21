@@ -30,10 +30,11 @@ factorialize(5);        // 120
 function findLongestWordLength(str) {
     let words = str.match(/\w+/g);
     let maxLength = 0;
-    for(let word in words){
+    for(let word in words){                 // in arrays, for...in loop brings indices into our variable
       let len = words[word].length;
       if(len>maxLength) maxLength = len;
     }
     return maxLength;
 }
 console.log(findLongestWordLength("May the force be with you"));        // 5
+
