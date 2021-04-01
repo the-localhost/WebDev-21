@@ -141,3 +141,13 @@ function bouncer(arr) {
   return res;
 }
 bouncer([7, "ate", "", false, 9]);  // [7, "ate", 9]
+
+// lowest index at which num should be inserted in sorted version of arr
+function getIndexToIns(arr, num) {
+  let res=0;
+  for(let i in arr){
+    if(arr[i]<num) res++;
+  }
+  return res;
+}
+getIndexToIns([40, 60], 50);    // 1
