@@ -151,3 +151,16 @@ function getIndexToIns(arr, num) {
   return res;
 }
 getIndexToIns([40, 60], 50);    // 1
+
+// check if all characters of 2nd str are present in 1st str
+function mutation(arr) {
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  let chArr1 = [...arr[0]];
+  let chArr2 = [...arr[1]];
+  for(let i in chArr2){
+    if(chArr1.indexOf(chArr2[i])==-1) return false;
+  }
+  return true;
+}
+mutation(["hello", "hey"]);
