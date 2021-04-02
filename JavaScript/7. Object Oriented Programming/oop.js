@@ -161,3 +161,28 @@ Dog.prototype = {
   describe: function() {
     console.log("My name is " + this.name);
 }
+
+/** setting the constructor property when changing the prototype
+ *  > manually setting the protoype erases the constructor of "new objects"
+ *  > new objects mean objects initiated after changing prototype
+*/
+function Dog(name) {
+    this.name = name;
+}
+let sweetie = new Dog("Coffee");        // created before changing prototype
+Dog.prototype = {
+  //constructor: Dog,                   // uncomment this line to set the constructor for tom as Dog
+    numLegs: 4,
+    eat: function() {
+      console.log("nom nom nom");
+    },
+    describe: function() {
+      console.log("My name is " + this.name);
+    }
+};
+let tom = new Dog("Tommy");                     // created after changing prototype
+console.log(tom.constructor === Dog);           // false
+console.log(tom.constructor === Object);        // true
+console.log(tom instanceof Dog);                // true
+console.log(tom.constructor)                    // [Function: Object]
+console.log(sweetie.constructor)                // [Function: Dog]
