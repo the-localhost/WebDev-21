@@ -19,3 +19,11 @@ let dog = {
 };
 console.log(dog.name);
 console.log(dog.numLegs);
+
+// creating a method on an object
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: () => `This dog has ${dog.numLegs} legs.`
+};
+console.log(dog.sayLegs());     // This dog has 4 legs.
