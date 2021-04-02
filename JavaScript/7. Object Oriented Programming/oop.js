@@ -82,3 +82,20 @@ let myNewHouse = {                          // w/o using constructor
     numBedrooms : 7
 }
 console.log(myNewHouse instanceof House);   //false
+
+/** OWN PROPERTIES
+ *  > defined directly on the instance object
+ *  > the instantiated objects will have their own separate copy of these properties
+*/
+function Bird(name) {
+    this.name = name;
+    this.numLegs = 2;
+}
+let canary = new Bird("Tweety");
+let ownProps = [];
+for(let prop in canary){
+    if(canary.hasOwnProperty(prop)){
+        ownProps.push(prop);
+    }
+}
+console.log(ownProps);              // [ 'name', 'numLegs' ]
