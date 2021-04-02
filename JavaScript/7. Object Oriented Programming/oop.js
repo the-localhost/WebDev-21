@@ -42,11 +42,18 @@ console.log(dog.sayLegs());     // This dog has 4 legs.
  *  > functions that create new objects
  *  > define properties and behaviors that will belong to the new object
  *  > defined with a capitalized name to distinguish them from non-constructor fns
- *  > use the keyword this to set properties of the object they will create
+ *  > use the keyword 'this' to set properties of the object they will create
  *  > define properties and behaviors instead of returning a value
+ *  NOTE: 'this' inside the constructor always refers to the object being created.
 */
 function Dog() {
     this.name = "Tommy";
     this.color = "Black";
     this.numLegs = 4;
 }
+
+/** using a constructor to create objects
+ *  > the 'new' operator is used when calling a constructor
+ *  > w/o 'new' operator, 'this' inside constructor would not point to newly created object, giving unexpected results
+*/
+let hound = new Dog();
