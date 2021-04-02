@@ -298,3 +298,21 @@ Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
 Dog.prototype.bark = () => console.log("Woof!");
 let beagle = new Dog();
+
+/** overriding inherited methods
+ *  > done in same way as defining a new method
+ *  > let's say this is order==> Object->Animal->Bird->duck, then JS looks for method in this way:
+ *       duck => Is eat() defined here? No.
+ *       Bird => Is eat() defined here? => Yes. Execute it and stop searching.
+ *       Animal => eat() is also defined, but JavaScript stopped searching before reaching this level.
+ *       Object => JavaScript stopped searching before reaching this level.
+*/
+function Animal() { }
+Animal.prototype.eat = function() {                 // inherited method
+  return "nom nom nom";
+};
+function Bird() { }
+Bird.prototype = Object.create(Animal.prototype);
+Bird.prototype.eat = function() {                   // overriding
+  return "peck peck peck";
+};
