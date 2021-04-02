@@ -258,3 +258,18 @@ let duck = Object.create(Animal.prototype);
 let beagle = Object.create(Animal.prototype);
 console.log(duck instanceof Animal);            // true
 console.log(beagle instanceof Animal);          // true
+
+/** inheritance step 2: set the child's prototype to an instance of the parent
+ *  > by doing this, the prototype of child will have all props of parent
+ */
+ function Animal() { }
+ Animal.prototype = {
+   constructor: Animal,
+   eat: function() {
+     console.log("nom nom nom");
+   }
+ };
+ function Dog() { }
+ Dog.prototype = Object.create(Animal.prototype);
+ let beagle = new Dog();
+ beagle.eat();          // beagle inherits all properties of Animal
