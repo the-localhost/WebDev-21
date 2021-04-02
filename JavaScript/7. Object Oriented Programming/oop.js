@@ -355,3 +355,11 @@ function Bird() {
 }
 let ducky = new Bird();
 console.log(ducky.getWeight());     // 15
+
+/** Immediately Invoked Function Expression (IIFE)
+ *  > to execute a function as soon as it is declared
+ *  > () at end of function expression cause it to be immediately executed or invoked
+*/
+(function () {
+    console.log("Chirp, chirp!");
+})();
