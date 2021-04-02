@@ -186,3 +186,13 @@ console.log(tom.constructor === Object);        // true
 console.log(tom instanceof Dog);                // true
 console.log(tom.constructor)                    // [Function: Object]
 console.log(sweetie.constructor)                // [Function: Dog]
+
+/** where an object's prototype comes from
+ *  > an object inherits its prototype directly from the constructor function that created it
+ *  > we can show this relationship with the isPrototypeOf method
+*/
+function Dog(name) {
+    this.name = name;
+}
+let beagle = new Dog("Snoopy");
+console.log(Dog.prototype.isPrototypeOf(beagle));       // true
