@@ -339,3 +339,19 @@ glideMixin(bird);
 glideMixin(boat);
 bird.glide();           // I'm gliding! 
 boat.glide();           // I'm gliding!
+
+/** using closure to protect properties within an object from being modified externally
+ *  > public propeties can be accessed and changed outside of object's definition
+ *  > we can make a public property private by creating a variable within the constructor function
+ *  > this changes the scope of that variable to be within the constructor function versus available globally
+ *  > the variable can then only be accessed and changed by methods also within the constructor function
+ *  >  In JS, a function always has access to the context in which it was created. This is called CLOSURE.
+*/
+function Bird() {
+    let weight = 15;
+    this.getWeight = function(){
+      return weight;
+    }
+}
+let ducky = new Bird();
+console.log(ducky.getWeight());     // 15
