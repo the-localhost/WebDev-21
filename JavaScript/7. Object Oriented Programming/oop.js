@@ -196,3 +196,23 @@ function Dog(name) {
 }
 let beagle = new Dog("Snoopy");
 console.log(Dog.prototype.isPrototypeOf(beagle));       // true
+
+/** PROTOTYPE CHAIN
+ *  > because a prototype is an object, a prototype can have its own prototype
+ *  > hasOwnProperty method is defined in Object.prototype which can be accessed by Dog.prototype
+ *      which can then be accessed by beagle
+ *  > Dog is a supertype for beagle, Object is a supertype for both Dog and beagle
+ *  > Object is a supertype for all JS objects
+*/
+function Bird(name) {
+    this.name = name;
+}
+console.log(typeof Bird.prototype);        // object
+console.log(Object.prototype.isPrototypeOf(Bird.prototype));    // true
+///////////
+function Dog(name) {
+    this.name = name;
+}
+let beagle = new Dog("Snoopy");
+console.log(Dog.prototype.isPrototypeOf(beagle));               // true
+console.log(Object.prototype.isPrototypeOf(Dog.prototype));     // true
