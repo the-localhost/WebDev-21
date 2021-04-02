@@ -11,3 +11,11 @@ let dog = {
     name : "tommy",
     numLegs : 4
 };
+
+// accessing properties of an object using dot notation
+let dog = {
+    name: "Spot",
+    numLegs: 4
+};
+console.log(dog.name);
+console.log(dog.numLegs);
