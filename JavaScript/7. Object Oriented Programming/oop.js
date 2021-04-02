@@ -131,3 +131,18 @@ for(let prop in beagle){
 }
 console.log(ownProps);                  // [ 'name' ]
 console.log(prototypeProps);            // [ 'numLegs' ]
+
+/** CONSTRUCTOR PROPERTY
+ *  >  a reference to the constructor function that created the instanc
+ *  > advantage: to find out what kind of object it is
+ *  > NOTE: constructor property can be overwritten; generally better to use the instanceof method
+*/
+function Dog(name) {
+    this.name = name;
+}
+function joinDogFraternity(candidate) {
+    if(candidate.constructor==Dog){
+        return true;
+    }
+    return false;
+}
