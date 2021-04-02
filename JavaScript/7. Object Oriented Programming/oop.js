@@ -99,3 +99,17 @@ for(let prop in canary){
     }
 }
 console.log(ownProps);              // [ 'name', 'numLegs' ]
+
+/** using Prototype Properties to reduce duplicate code
+ *  > used when we have a duplicated variable; eg: numLegs in above Bird class
+ *  > prototype properties are shared among ALL instances
+ *  > the proptype properties are part of their constructors
+ *  > nearly every object in JS has a prototype property which is part of the constructor fn that created it
+*/
+function Dog(name) {
+    this.name = name;
+}
+Dog.prototype.numLegs = 4;
+let beagle = new Dog("Snoopy");
+console.log(beagle);            // { name: 'Snoopy' }
+console.log(Dog.prototype);     // { numLegs: 4 }
