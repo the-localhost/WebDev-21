@@ -241,3 +241,20 @@ Animal.prototype = {
         console.log("nom nom nom");
     }
 };
+
+/** inheritance step 1: make an instance of the supertype (or parent)
+ *  > better way :  (Animal is a supertype)
+ *          let animal = Object.create(Animal.prototype);
+ *  > Object.create(obj) creates a new object, and sets obj as the new object's prototype
+*/
+function Animal() { }
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+let duck = Object.create(Animal.prototype);
+let beagle = Object.create(Animal.prototype);
+console.log(duck instanceof Animal);            // true
+console.log(beagle instanceof Animal);          // true
