@@ -66,3 +66,19 @@ function Dog(name, color) {
 }
 let terrier = new Dog("tommy", "black");
 console.log(terrier);       // { name: 'tommy', color: 'black', numLegs: 4 }
+
+/** verifying an object's constructor using instanceof
+ *  > instanceof allows us to compare an object to a constructor
+ *  > returns true if that object was created with the constructor else false
+ *  > if an object is created without using a constructor, instanceof returns false
+*/
+function House(numBedrooms) {
+    this.numBedrooms = numBedrooms;
+}
+let myHouse = new House(5);                 // using constructor
+console.log(myHouse instanceof House);      // true
+//////////////////
+let myNewHouse = {                          // w/o using constructor
+    numBedrooms : 7
+}
+console.log(myNewHouse instanceof House);   //false
