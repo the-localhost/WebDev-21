@@ -363,3 +363,44 @@ console.log(ducky.getWeight());     // 15
 (function () {
     console.log("Chirp, chirp!");
 })();
+
+/** using an IIFE to create a module
+ *  > an IIFE is often used to group related functionality into a single object/module
+*/
+
+/** EXAMPLE */
+// without using IIFE module
+function glideMixin(obj) {
+    obj.glide = function() {
+      console.log("Gliding on the water");
+    };
+}
+function flyMixin(obj) {
+    obj.fly = function() {
+      console.log("Flying, wooosh!");
+    };
+}
+glideMixin(duck);
+duck.glide();
+
+/** using IIFE module
+ *  > the IIFE returns an object motionModule
+ *  > this returned object contains all of the mixin behaviors as properties of the object
+ *  > all of the motion behaviors can be packaged into a single object
+ */
+let motionModule = (function () {
+    return {
+      glideMixin: function(obj) {
+        obj.glide = function() {
+          console.log("Gliding on the water");
+        };
+      },
+      flyMixin: function(obj) {
+        obj.fly = function() {
+          console.log("Flying, wooosh!");
+        };
+      }
+    }
+})();
+motionModule.glideMixin(duck);
+duck.glide();
