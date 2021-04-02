@@ -57,3 +57,12 @@ function Dog() {
  *  > w/o 'new' operator, 'this' inside constructor would not point to newly created object, giving unexpected results
 */
 let hound = new Dog();
+
+// extending constructors to recieve arguments
+function Dog(name, color) {
+    this.name = name;
+    this.color=color;
+    this.numLegs = 4;
+}
+let terrier = new Dog("tommy", "black");
+console.log(terrier);       // { name: 'tommy', color: 'black', numLegs: 4 }
