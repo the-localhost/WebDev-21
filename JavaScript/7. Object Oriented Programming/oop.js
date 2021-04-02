@@ -107,9 +107,27 @@ console.log(ownProps);              // [ 'name', 'numLegs' ]
  *  > nearly every object in JS has a prototype property which is part of the constructor fn that created it
 */
 function Dog(name) {
+    this.name = name;           // own property
+}
+Dog.prototype.numLegs = 4;      // prototype property
+let beagle = new Dog("Snoopy");
+console.log(beagle);            // { name: 'Snoopy' }
+console.log(Dog.prototype);     // { numLegs: 4 }
+
+// iterating over all properties
+function Dog(name) {
     this.name = name;
 }
 Dog.prototype.numLegs = 4;
 let beagle = new Dog("Snoopy");
-console.log(beagle);            // { name: 'Snoopy' }
-console.log(Dog.prototype);     // { numLegs: 4 }
+let ownProps = [];
+let prototypeProps = [];
+for(let prop in beagle){
+    if(beagle.hasOwnProperty(prop)){
+        ownProps.push(prop);
+    }else{
+        prototypeProps.push(prop);
+    }
+}
+console.log(ownProps);                  // [ 'name' ]
+console.log(prototypeProps);            // [ 'numLegs' ]
