@@ -146,3 +146,18 @@ function joinDogFraternity(candidate) {
     }
     return false;
 }
+
+// changing the prototype to a new object
+// helpful when no of prototype properties increase greatly and ading props become tedious
+// the object contains all the reqd. props and adds them efficiently
+function Dog(name) {
+    this.name = name;
+}
+Dog.prototype = {
+    numLegs: 2, 
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+}
