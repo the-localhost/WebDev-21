@@ -27,3 +27,13 @@ let dog = {
     sayLegs: () => `This dog has ${dog.numLegs} legs.`
 };
 console.log(dog.sayLegs());     // This dog has 4 legs.
+
+// making above code more reusable using 'this' keyword
+// this refers to the object that the method is associated with
+// if variable name changes, it's references has to be changed too
+let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: () => `This dog has ${this.numLegs} legs.`
+};
+console.log(dog.sayLegs());     // This dog has 4 legs.
