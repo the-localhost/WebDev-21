@@ -37,3 +37,16 @@ let dog = {
     sayLegs: () => `This dog has ${this.numLegs} legs.`
 };
 console.log(dog.sayLegs());     // This dog has 4 legs.
+
+/** CONSTRUCTOR FUNCTION
+ *  > functions that create new objects
+ *  > define properties and behaviors that will belong to the new object
+ *  > defined with a capitalized name to distinguish them from non-constructor fns
+ *  > use the keyword this to set properties of the object they will create
+ *  > define properties and behaviors instead of returning a value
+*/
+function Dog() {
+    this.name = "Tommy";
+    this.color = "Black";
+    this.numLegs = 4;
+}
