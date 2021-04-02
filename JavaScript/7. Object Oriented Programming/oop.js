@@ -261,15 +261,31 @@ console.log(beagle instanceof Animal);          // true
 
 /** inheritance step 2: set the child's prototype to an instance of the parent
  *  > by doing this, the prototype of child will have all props of parent
- */
- function Animal() { }
- Animal.prototype = {
+*/
+function Animal() { }
+Animal.prototype = {
    constructor: Animal,
    eat: function() {
      console.log("nom nom nom");
    }
- };
- function Dog() { }
- Dog.prototype = Object.create(Animal.prototype);
- let beagle = new Dog();
- beagle.eat();          // beagle inherits all properties of Animal
+};
+function Dog() { }
+Dog.prototype = Object.create(Animal.prototype);
+let beagle = new Dog();
+beagle.eat();          // beagle inherits all properties of Animal
+
+/** resetting an inherited constructor's property
+ *  > when an object inherits its prototype from another object, it also inherits the supertype's constructor property
+ *  > to show child's constructor name in constructor property, manually set it
+*/
+function Animal() { }
+function Bird() { }
+function Dog() { }
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+let duck = new Bird();
+let beagle = new Dog();
+console.log(duck.constructor);          // [Function: Bird]
+console.log(beagle.constructor);        // [Function: Dog]
