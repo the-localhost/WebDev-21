@@ -316,3 +316,26 @@ Bird.prototype = Object.create(Animal.prototype);
 Bird.prototype.eat = function() {                   // overriding
   return "peck peck peck";
 };
+
+/** using mixin to add common behaviour between unrelated objects
+ *  > inheritance does not work well for unrelated objects like Bird and Airplane
+ *  > both can fly but Bird is not a type of Airplane and vice versa
+ *  > a mixin allows other objects to use a collection of functions
+*/
+let bird = {
+    name: "Donald",
+    numLegs: 2
+};
+let boat = {
+    name: "Warrior",
+    type: "race-boat"
+};
+let glideMixin = function(obj){
+    obj.glide = function() {
+        console.log("I'm gliding!");
+    }
+}
+glideMixin(bird);
+glideMixin(boat);
+bird.glide();           // I'm gliding! 
+boat.glide();           // I'm gliding!
