@@ -216,3 +216,28 @@ function Dog(name) {
 let beagle = new Dog("Snoopy");
 console.log(Dog.prototype.isPrototypeOf(beagle));               // true
 console.log(Object.prototype.isPrototypeOf(Dog.prototype));     // true
+
+/** using inheritance to avoid repitition
+ *  > repeated code is a problem is because any change requires fixing code in multiple places
+ *  > In below example, Animal is a supertype for both Cat and Bear
+ *  > Instead of repeating eat method two times, it's defined once in Animal
+*/
+function Cat(name) {
+    this.name = name;
+}
+Cat.prototype = {
+    constructor: Cat,
+};
+function Bear(name) {
+    this.name = name;
+}
+Bear.prototype = {
+  constructor: Bear
+};
+function Animal() { }           // Doubt: How is Animal a superclass of Cat
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+};
