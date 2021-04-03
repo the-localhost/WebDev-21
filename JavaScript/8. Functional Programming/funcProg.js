@@ -54,7 +54,18 @@ function removeNthElement(arr, n){
  *  > in func prog, changing/altering things is called Mutation; outcome is called a Side Effect
  *  > pure functions:  it does not cause any side effects
 */
-var fixedValue = 4;
-function incrementer () {       // returns global var fixedValue incremented by 1 w/o changing it
+var fixedValue = 4;             // global variable
+function incrementer () {       // returns fixedValue incremented by 1 w/o changing it
     return fixedValue+1;
+}
+
+/** passing arguments to avoid external dependence in a function
+ *  > another principle of func. prog. is to always declare dependencies explicitly
+ *  > if fn depends on a var/object being present, pass that variable/object directly into the function as argument
+ *  > the fn is easier to test; we know exactly what input it takes; it won't depend on anything else in our program
+ *  > the fn would always produce same output for same set of inputs, no matter what part of code executes it
+*/
+var fixedValue = 4;                           
+function incrementer (val) {        // dependency declared clearly
+  return val+1;
 }
