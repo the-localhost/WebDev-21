@@ -48,3 +48,13 @@ function removeNthElement(arr, n){
     var arr2 = arr.splice(n+1);     // elements after nth element; WRONG!
     return arr1.concat(arr2);
 }
+
+/** avoiding mutations and side effects using functional programming
+ *  > one of the core priciple of func. prog. is to not change things; changes lead to bugs
+ *  > in func prog, changing/altering things is called Mutation; outcome is called a Side Effect
+ *  > pure functions:  it does not cause any side effects
+*/
+var fixedValue = 4;
+function incrementer () {       // returns global var fixedValue incremented by 1 w/o changing it
+    return fixedValue+1;
+}
