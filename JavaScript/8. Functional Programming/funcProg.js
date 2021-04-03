@@ -69,3 +69,9 @@ var fixedValue = 4;
 function incrementer (val) {        // dependency declared clearly
   return val+1;
 }
+
+// refactoring global variables out of the functions
+// by introducing appropriate parameter and passing global variables
+/** var newArr = arrVar; simply creates a reference to the existing variable and not a copy
+ *  changing a value in newArr would change the value in arrVar
+*/
