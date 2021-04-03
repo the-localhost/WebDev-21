@@ -36,3 +36,15 @@ const getTea = (prepareTea, numOfCups) => {
 };
 const tea4GreenTeamFCC = getTea(prepareGreenTea, 27);
 const tea4BlackTeamFCC = getTea(prepareBlackTea, 13);
+
+/** hazards of using using imperative code
+ *  > imperative style in programming gives computer a set of statements to perform a task
+ *  > functional programming is declarative; we tell computer what we want done by calling methods/functions
+ *  > JS offers many predefined methods that handle common tasks (eg.: map to iterate array)
+ *  > below method fails as splice changes the original array
+*/
+function removeNthElement(arr, n){
+    var arr1 = arr.splice(0,n);     // elements before nth element
+    var arr2 = arr.splice(n+1);     // elements after nth element; WRONG!
+    return arr1.concat(arr2);
+}
