@@ -75,3 +75,21 @@ function incrementer (val) {        // dependency declared clearly
 /** var newArr = arrVar; simply creates a reference to the existing variable and not a copy
  *  changing a value in newArr would change the value in arrVar
 */
+
+/** using the map method to extract data from an array
+ *  > The map method
+ *      -  iterates over each item in an array
+ *      - returns a new array containing the results of calling the callback fn on each element
+ *      - without mutating the original array
+ *  > When the callback is used, it is passed three arguments:
+ *      - 1st : the current element being processed
+ *      - 2nd : the index of that element
+ *      - 3rd : the array upon which the map method was called
+*/
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+const names = users.map(user => user.name);
+console.log(names);     // [ 'John', 'Amy', 'camperCat' ]
