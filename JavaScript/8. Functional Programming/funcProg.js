@@ -199,3 +199,26 @@ function nonMutatingPush(original, newItem) {
 var first = [1, 2, 3];
 var second = [4, 5];
 nonMutatingPush(first, second);
+
+/** using the reduce method to analyze data
+ *  > Arrays.prototype.reduce() : iterates over each item in an array and returns a single value
+ *  > this is achieved via a callback function
+ *  > map and filter can be derived using reduce
+ *  > four args of callback function;
+ *      - accumulator : it gets assigned the return value of callback fn from previous iteration
+ *      - the current element being processed
+ *      - the index of that element
+ *      - the array upon which reduce is called
+ *  > reduce has additional param apart from callback fn which takes an initial value for the accumulator
+ *      - if not used: 1st iteration is skipped; second iteration gets passed the 1st elem of arr as the accumulator
+*/
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+const usersObj = users.reduce((obj, user) => {
+  obj[user.name] = user.age;
+  return obj;
+}, {});
+console.log(usersObj);          // { John: 34, Amy: 20, camperCat: 10 }
