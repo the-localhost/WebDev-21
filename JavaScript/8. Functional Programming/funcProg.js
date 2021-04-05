@@ -233,3 +233,15 @@ const squareList = arr => {
 };
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
+
+/** sorting an array alphabetically using sort method
+ *  > sort method sorts the elements of an array according to the callback fn (compare fn)
+ *  > compareFunction(a,b): 
+ *        - positive : a will come after b
+ *        - negative : a will come before b
+ *        - zero     : a an b will remain unchanged
+*/
+function alphabeticalOrder(arr) {
+  return arr.sort((a,b) => a>b?1:-1);
+}
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);    // [ 'a', 'a', 'c', 'd', 'g', 'z' ]
