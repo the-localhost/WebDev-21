@@ -76,7 +76,7 @@ function incrementer (val) {        // dependency declared clearly
  *  changing a value in newArr would change the value in arrVar
 */
 
-/** using the map method to extract data from an array
+/** using the MAP method to extract data from an array
  *  > The map method
  *      -  iterates over each item in an array
  *      - returns a new array containing the results of calling the callback fn on each element
@@ -122,7 +122,7 @@ var new_s = s.myMap(function(item) {
   return item * 2;
 });
 
-/** using the .filter() method to extract data from arrays
+/** using the FILTER method to extract data from arrays
  *  > filter() filters the array, based on the function passed to it
  *  > Arrays.prototype.filter() === .filter()
  *  > doesn't modify the original array
@@ -178,7 +178,7 @@ function nonMutatingSplice(cities) {
 var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
 
-/** combining two arrays using concat method
+/** combining two arrays using CONCAT method
  *  > concatenation means to join items end to end
  *  > returns a new array; does not mutate either of the original arrays
 */
@@ -200,7 +200,7 @@ var first = [1, 2, 3];
 var second = [4, 5];
 nonMutatingPush(first, second);
 
-/** using the reduce method to analyze data
+/** using the REDUCE method to analyze data
  *  > Arrays.prototype.reduce() : iterates over each item in an array and returns a single value
  *  > this is achieved via a callback function
  *  > map and filter can be derived using reduce
@@ -234,7 +234,7 @@ const squareList = arr => {
 const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
 console.log(squaredIntegers);
 
-/** sorting an array alphabetically using sort method
+/** sorting an array alphabetically using SORT method
  *  > sort method sorts the elements of an array according to the callback fn (compare fn)
  *  > compareFunction(a,b): 
  *        - positive : a will come after b
@@ -258,3 +258,13 @@ function nonMutatingSort(arr) {
   return newArr.sort((a,b)=>a-b);
 }
 nonMutatingSort(globalArray);
+
+/** splitting a string into an array using SPLIT method
+ *  > .split() splits a string into an array of strings
+ *  > takes an argument for the delimiter (a character or a regular expression to use to break up the string)
+ *  > strings are by themselves immutable
+*/
+var str = "Hello World";
+var bySpace = str.split(" ");           // ["Hello", "World"]
+var otherString = "How9are7you2today";
+var byDigits = otherString.split(/\d/); // ["How", "are", "you", "today"]
