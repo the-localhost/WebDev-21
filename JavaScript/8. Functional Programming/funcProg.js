@@ -177,3 +177,14 @@ function nonMutatingSplice(cities) {
 }
 var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
+
+/** combining two arrays using concat method
+ *  > concatenation means to join items end to end
+ *  > returns a new array; does not mutate either of the original arrays
+*/
+function nonMutatingConcat(original, attach) {
+  return original.concat(attach);
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+nonMutatingConcat(first, second);
