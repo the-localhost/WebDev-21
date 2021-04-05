@@ -103,4 +103,21 @@ console.log(names);     // [ 'John', 'Amy', 'camperCat' ]
  *          const abc = xyz.map(entry => {
  *                        return {title:entry.title};
  *                      });
- */
+*/
+
+/** implementing map on a prototype
+ *  > .map() is a pure function
+ *  > below is the implementation of myMap() method which behaves exactly same as .map() method
+ *  > original method: Array.prototype.map(); myMap: Array.prototype.myMap()
+*/
+var s = [23, 65, 98, 5];      // Global variable
+Array.prototype.myMap = function(callback) {
+  var newArray = [];
+  for(let i=0; i<s.length; i++){
+    newArray.push(callback(s[i]));
+  }
+  return newArray;
+};
+var new_s = s.myMap(function(item) {
+  return item * 2;
+});
