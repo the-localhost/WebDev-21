@@ -222,3 +222,14 @@ const usersObj = users.reduce((obj, user) => {
   return obj;
 }, {});
 console.log(usersObj);          // { John: 34, Amy: 20, camperCat: 10 }
+
+// using map, filter or reduce to solve complex problems
+// PROBLEM: return array containing "square of positive integers" from given array
+const squareList = arr => {
+  return arr
+    .filter(w => Math.floor(w)==w)
+    .filter(w => w>0)
+    .map(w => w*w);
+};
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
