@@ -188,3 +188,14 @@ function nonMutatingConcat(original, attach) {
 var first = [1, 2, 3];
 var second = [4, 5];
 nonMutatingConcat(first, second);
+
+/** adding elements to the end of the array using concat instead of push
+ *  > concat offers a way to add new items to the end of an array without any mutating side effects
+*/
+function nonMutatingPush(original, newItem) {
+  //return original.push(newItem);        // mutates the original array
+  return original.concat(newItem);
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+nonMutatingPush(first, second);
