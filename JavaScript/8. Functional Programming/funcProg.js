@@ -240,8 +240,21 @@ console.log(squaredIntegers);
  *        - positive : a will come after b
  *        - negative : a will come before b
  *        - zero     : a an b will remain unchanged
+ *  > if compare fn is not provided, the default comparison (UTF encoding) can produce unexpected results
+ *  > hence, we should always provide the compare fn
 */
 function alphabeticalOrder(arr) {
   return arr.sort((a,b) => a>b?1:-1);
 }
 alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);    // [ 'a', 'a', 'c', 'd', 'g', 'z' ]
+
+/** returning a sorted array w/o changing the original array
+ *  > .sort() mutates the array in place
+ *  > one way to avoid it is to make copy first (using concat/slice)
+*/
+var globalArray = [5, 6, 3, 2, 9];
+function nonMutatingSort(arr) {
+  var newArr = [].concat(arr);
+  return newArr.sort((a,b)=>a-b);
+}
+nonMutatingSort(globalArray);
