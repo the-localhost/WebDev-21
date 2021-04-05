@@ -268,3 +268,13 @@ var str = "Hello World";
 var bySpace = str.split(" ");           // ["Hello", "World"]
 var otherString = "How9are7you2today";
 var byDigits = otherString.split(/\d/); // ["How", "are", "you", "today"]
+
+/** combining an array into a string using the JOIN method
+ *  > to join the elements of an array together to create a string
+ *  > takes an argument for the delimiter that is used to separate the array elements in the string
+*/
+function sentensify(str) {
+  return str.split(/[ .,\-]/g).join(" ");
+}
+sentensify("May-the-force-be-with-you");  // May the force be with you
+
