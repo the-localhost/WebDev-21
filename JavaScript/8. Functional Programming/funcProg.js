@@ -93,3 +93,14 @@ const users = [
 ];
 const names = users.map(user => user.name);
 console.log(names);     // [ 'John', 'Amy', 'camperCat' ]
+
+/** returning an object using the arrow function
+ *    > consider we need to return an object in map function, with title 
+ *          const abc = xyz.map(entry => {title:entry.title});
+ *      this will return syntax error. Reason:
+ *        - if we use braces right after the arrow of an arrow function, we are actually starting a new code block instead of returning an object literal
+ *      SO, the correct code for above purpose will be:
+ *          const abc = xyz.map(entry => {
+ *                        return {title:entry.title};
+ *                      });
+ */
