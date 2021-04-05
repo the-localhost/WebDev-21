@@ -167,3 +167,13 @@ function sliceArray(anim, beginSlice, endSlice) {
 }
 var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);        // [ 'Dog', 'Tiger' ]
+
+/** removing elements from an array using .slice instead of .splice()
+ *  > using the slice method instead of splice helps to avoid any array-mutating side effects
+*/
+function nonMutatingSplice(cities) {
+  // return cities.splice(3);     // mutates the original array 'cities'
+  return cities.slice(0,3);
+}
+var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
