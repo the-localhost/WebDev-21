@@ -121,3 +121,19 @@ Array.prototype.myMap = function(callback) {
 var new_s = s.myMap(function(item) {
   return item * 2;
 });
+
+/** using the .filter() method to extract data from arrays
+ *  > filter() filters the array, based on the function passed to it
+ *  > doesn't modify the original array
+ *  > callback function accepts three arguments:
+ *       1st : the current element being processed
+ *       2nd : the index of that element
+ *       3rd : the array upon which the filter method was called
+*/
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+const usersUnder30 = users.filter(user => user.age < 30);
+console.log(usersUnder30);      // [ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ]
