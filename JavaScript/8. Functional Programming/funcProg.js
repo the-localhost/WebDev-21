@@ -124,6 +124,7 @@ var new_s = s.myMap(function(item) {
 
 /** using the .filter() method to extract data from arrays
  *  > filter() filters the array, based on the function passed to it
+ *  > Arrays.prototype.filter() === .filter()
  *  > doesn't modify the original array
  *  > callback function accepts three arguments:
  *       1st : the current element being processed
@@ -137,3 +138,32 @@ const users = [
 ];
 const usersUnder30 = users.filter(user => user.age < 30);
 console.log(usersUnder30);      // [ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ]
+
+/** implementing the filter() method on a prototype 
+ *  > Arrays.prototype.myFilter() behaves exactly like Arrays.prototype.filter()
+*/
+var s = [23, 65, 98, 5];
+Array.prototype.myFilter = function(callback) {
+  var newArray = [];
+  for(let i=0; i<s.length; i++){
+    if(callback(s[i])) newArray.push(s[i]);
+  }
+  return newArray;
+};
+var new_s = s.myFilter(function(item) {
+  return item % 2 === 1;
+});
+
+/** returning part of an array using SLICE method
+ *  > .slice() returns a copy of certain elements of the array
+ *  > 2 args:
+ *      - 1st : gives the index of where to begin the slice (included)
+ *      - 2nd : the index for where to end the slice (excluded)
+ *  > if no args provided, makes a copy of the whole array (beginning till end)
+ *  > .slice() doesn't mutate the original array
+*/
+function sliceArray(anim, beginSlice, endSlice) {
+  return anim.slice(beginSlice, endSlice);
+}
+var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);        // [ 'Dog', 'Tiger' ]
