@@ -302,14 +302,13 @@ function checkPositive(arr) {    // checks if any element is +ve
 }
 checkPositive([1, 2, 3, -4, 5]);
 
-/** CURRYING & PARTIAL APPLICATION
+/** CURRYING
  *  > The arity of a function is the number of arguments it requires. 
  *  > Currying a function means to convert a function of N arity into N functions of arity 1
  *  > it restructures a fn so it takes one argument, then returns another fn that takes the next argument, and so on
  *  > helpful if we can't supply all the arguments to a function at one time 
  *        - save each function call into a variable, which will hold the returned function reference
  *        - give the next argument when it's available
- *  > Partial Application: applying a few arguments to a fn at a time and returning another fn that is applied to more arguments.
 */
 function unCurried(x, y) {    
   return x + y;
@@ -319,10 +318,19 @@ function curried(x) {     // currying in general use
     return x + y;
   }
 }
-const curried = x => y => x + y;
+const curried = x => y => x + y;  // same as previous definition, but using arrow fn
 curried(1)(2);            // 3
 
 // currying when all arguments aren't provided at once
 const curried = x => y => x + y;
 var funcForY = curried(1);
 console.log(funcForY(2)); // 3
+
+/** PARTIAL APPLICATION
+ *  > applying a few arguments to a fn at a time and returning another fn that is applied to more arguments
+ */
+function impartial(x, y, z) {
+  return x + y + z;
+}
+var partialFn = impartial.bind(this, 1, 2);
+partialFn(10);            // 13
