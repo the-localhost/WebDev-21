@@ -51,4 +51,22 @@ function destroyer(arr) {
     }
     return newArr;
 }
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));       //[1,1]
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));       // [1,1]
+
+// select objects from collection which has same values for properties present in source
+function whatIsInAName(collection, source) {
+    var arr = [];
+    arr = collection.filter(w=>{
+      for(let prop in source){
+        if(!w.hasOwnProperty(prop) || source[prop]!=w[prop]){
+          return false;
+        }
+      }
+      return true;
+    });
+    return arr;
+}
+whatIsInAName([{ first: "Romeo", last: "Montague" },            // [{ first: "Tybalt", last: "Capulet" }]
+                { first: "Mercutio", last: null }, 
+                { first: "Tybalt", last: "Capulet" }], 
+                { last: "Capulet" });
