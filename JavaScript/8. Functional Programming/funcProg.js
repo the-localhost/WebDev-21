@@ -288,7 +288,16 @@ console.log(urlSlug(" Winter Is  Coming"));
  *  > works with arrays to check if every element passes a particular test
  *  > returns true if all values meet the criteria; else false
 */
-function checkPositive(arr) {
+function checkPositive(arr) {   // checks if every element is +ve
   return arr.every(e => e>0);
+}
+checkPositive([1, 2, 3, -4, 5]);
+
+/** using the SOME method to check that any element in an array meets a criteria
+ *  > to check if any element passes a particular test
+ *  > returns true if any of the values meet the criteria; else false
+*/
+function checkPositive(arr) {    // checks if any element is +ve
+  return arr.some(e => e>0);  
 }
 checkPositive([1, 2, 3, -4, 5]);
