@@ -283,3 +283,12 @@ function urlSlug(title) {
   return title.toLowerCase().trim().split(/\s+/g).join("-");
 }
 console.log(urlSlug(" Winter Is  Coming"));
+
+/** using the EVERY method to check that every element in an array meets a criteria
+ *  > works with arrays to check if every element passes a particular test
+ *  > returns true if all values meet the criteria; else false
+*/
+function checkPositive(arr) {
+  return arr.every(e => e>0);
+}
+checkPositive([1, 2, 3, -4, 5]);
