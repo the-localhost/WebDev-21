@@ -42,3 +42,13 @@ function diffArray(arr1, arr2) {
       .filter(item => !arr1.includes(item) || !arr2.includes(item));
 }
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);       // [4]
+
+// Seek & Destroy: remove all the elements mentioned after the array argument
+function destroyer(arr) {
+    let newArr = [...arr];
+    for(let i=1; i<arguments.length; i++){              // note the use of arguments variable
+      newArr = newArr.filter(w=>w!=arguments[i]);
+    }
+    return newArr;
+}
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));       //[1,1]
