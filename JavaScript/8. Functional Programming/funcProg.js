@@ -320,4 +320,9 @@ function curried(x) {     // currying in general use
   }
 }
 const curried = x => y => x + y;
-curried(1)(2)
+curried(1)(2);            // 3
+
+// currying when all arguments aren't provided at once
+const curried = x => y => x + y;
+var funcForY = curried(1);
+console.log(funcForY(2)); // 3
