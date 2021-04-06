@@ -278,3 +278,8 @@ function sentensify(str) {
 }
 sentensify("May-the-force-be-with-you");  // May the force be with you
 
+// applying functional programming to convert strings to url slugs
+function urlSlug(title) {
+  return title.toLowerCase().trim().split(/\s+/g).join("-");
+}
+console.log(urlSlug(" Winter Is  Coming"));
