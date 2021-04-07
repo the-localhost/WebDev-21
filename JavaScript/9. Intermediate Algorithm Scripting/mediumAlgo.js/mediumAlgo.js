@@ -180,3 +180,20 @@ function convertHTML(str) {
   return str;
 }
 convertHTML("Dolce & Gabbana");   // Dolce &amp; Gabbana
+
+// Sum all odd Fibonacci numbers till N
+function sumFibs(num) {
+  if(num<1) return 0;
+  if(num==1) return 1;
+  let n0 = 1, n1 = 1, sum = 1;
+  while(n1<=num){
+    var temp = n1;
+    n1+=n0;
+    n0=temp;
+    if(n0<=num && n0%2) {
+      sum+=n0;
+    }
+  }
+  return sum;
+}
+console.log(sumFibs(75025));        // 135721
