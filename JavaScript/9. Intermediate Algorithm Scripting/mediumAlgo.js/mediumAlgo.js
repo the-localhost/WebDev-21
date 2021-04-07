@@ -78,3 +78,15 @@ function spinalCase(str) {
   return str.toLowerCase().split(/[_\s-]+/g).join("-");
 }
 spinalCase('This Is Spinal Tap');
+
+// Pig Latin
+function translatePigLatin(str) {
+  let regex = /[aeiou]/;  
+  let res = str.match(regex);
+  if(res==null) return str+"ay";        // if vowel is absent
+  if(res.index==0) return str+"way";    // if first char is vowel
+  return str.slice(res.index)+str.slice(0,res.index)+"ay";   // if first char is consonant
+}
+translatePigLatin("consonant");      // onsonantcay
+translatePigLatin("rythm");          // rythmay
+translatePigLatin("glove");          // oveglay
