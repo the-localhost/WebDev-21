@@ -240,3 +240,18 @@ function dropElements(arr, func) {
   return arr.slice(i);
 }
 dropElements([1, 2, 3, 4], function(n) {return n > 5;});    // []
+
+// steamroller: flatten the multi-dimensional array
+function steamrollArray(arr, res=[]) {
+  //console.log("new fn");
+  for(let i in arr){
+    if(!Array.isArray(arr[i])){
+      res.push(arr[i]);
+      //console.log(res);
+    }else{
+      steamrollArray(arr[i], res);
+    }
+  }
+  return res;
+}
+steamrollArray([1, {}, [3, [[4]]]]);    // [1, {}, 3, 4]
