@@ -284,3 +284,15 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111           // Aren't bo
             01100110 01101001 01110010 01100101 01110011 
             00100000 01100110 01110101 01101110 00100001 
             00111111);
+
+// Everything Be True
+function truthCheck(collection, pre) {
+  for(let i in collection){
+    if(!collection[i][pre]) return false;
+  }
+  return true;
+}
+truthCheck([{"user": "Tinky-Winky", "sex": "male"},               // true
+            {"user": "Dipsy", "sex": "male"}, 
+            {"user": "Laa-Laa", "sex": "female"}, 
+            {"user": "Po", "sex": "female"}], "sex");
