@@ -296,3 +296,17 @@ truthCheck([{"user": "Tinky-Winky", "sex": "male"},               // true
             {"user": "Dipsy", "sex": "male"}, 
             {"user": "Laa-Laa", "sex": "female"}, 
             {"user": "Po", "sex": "female"}], "sex");
+
+// Arguments Optional
+function addTogether(x) {
+  if(typeof x!=typeof(1)) return undefined;
+  if(arguments.length==2){
+    if(typeof arguments[1]!=typeof(1)) return undefined;
+    return x+arguments[1];
+  } 
+  return function(num){
+    if(typeof num!=typeof(1)) return undefined;
+    return num+x;
+  };
+}
+addTogether(2,3);       // 5
