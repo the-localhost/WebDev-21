@@ -131,3 +131,22 @@ function pairElement(str) {
   return res;
 }
 pairElement("GCG");     // [["G", "C"], ["C","G"], ["G", "C"]]
+
+/** Missing Letters
+ *  Other Solutions: https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-missing-letters/16023/12
+ *  My Solution:
+*/
+function fearNotLetter(str) {
+  let alpha = "abcdefghijklmnopqrstuvwxyz";
+  for(var i=0; i<26; i++){
+    if(str[0]===alpha[i])
+      break;    
+  }
+  var j = i;
+  while(alpha[j]===str[j-i]){
+    j++;
+  }
+  if(j-i==str.length) return undefined;
+  return alpha[j];
+}
+console.log(fearNotLetter("abce"));     // d
