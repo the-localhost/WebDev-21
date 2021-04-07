@@ -197,3 +197,19 @@ function sumFibs(num) {
   return sum;
 }
 console.log(sumFibs(75025));        // 135721
+
+// sum all primes <= N
+function sumPrimes(num) {
+  let sum=0;
+    for(let i=2; i<=num; i++){
+      if(isPrime(i)) sum+=i;
+    }
+    return sum;
+}
+const isPrime = (num) => {
+  for(let i=2; i<num; i++){
+    if(num%i==0) return false;
+  }
+  return true;
+}
+sumPrimes(10);      // 17
