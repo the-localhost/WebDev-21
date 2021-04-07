@@ -150,3 +150,16 @@ function fearNotLetter(str) {
   return alpha[j];
 }
 console.log(fearNotLetter("abce"));     // d
+
+// Unite Unique
+function uniteUnique(arr) {
+  let res = [];
+  for(let i in arguments){
+    let arr = arguments[i];
+    for(let j in arr){
+      if(res.indexOf(arr[j])==-1) res.push(arr[j]);
+    }
+  }
+  return res;
+}
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);   // [1, 3, 2, 5, 4]
