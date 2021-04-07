@@ -106,3 +106,28 @@ function myReplace(str, before, after) {
   return str;
 }
 myReplace("He is Sleeping on the couch", "Sleeping", "sitting");    // He is Sitting on the couch
+
+// DNA Pairing
+function pairElement(str) {
+  let res = [];
+  for(let c in str){
+    let char = str[c];
+    let arr = [char];
+    switch(char){
+      case "G":
+        arr.push("C");
+        break;
+      case "C":
+        arr.push("G");
+        break;
+      case "A":
+        arr.push("T");
+        break;
+      case "T":
+        arr.push("A");
+    }
+    res.push(arr);
+  }
+  return res;
+}
+pairElement("GCG");     // [["G", "C"], ["C","G"], ["G", "C"]]
