@@ -90,3 +90,19 @@ function translatePigLatin(str) {
 translatePigLatin("consonant");      // onsonantcay
 translatePigLatin("rythm");          // rythmay
 translatePigLatin("glove");          // oveglay
+
+// Search and Replace
+function myReplace(str, before, after) {
+  before = before.toLowerCase();
+  var cap = before[0].toUpperCase()+before.slice(1);
+  var small = before[0].toLowerCase()+before.slice(1);
+  var capRegex = new RegExp(cap);         // creating regex using a variable string
+  var smallRegex = new RegExp(small);
+  if(capRegex.test(str)){
+    str = str.replace(capRegex, after[0].toUpperCase()+after.slice(1));
+  }else{
+    str = str.replace(smallRegex, after[0].toLowerCase()+after.slice(1));
+  }
+  return str;
+}
+myReplace("He is Sleeping on the couch", "Sleeping", "sitting");    // He is Sitting on the couch
