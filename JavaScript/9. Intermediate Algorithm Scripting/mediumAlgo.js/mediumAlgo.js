@@ -230,3 +230,13 @@ const gcd = (b, a) => {
   return gcd(a, b%a);
 };
 console.log(smallestCommons([2,10]));   // 2520
+
+// drop it
+function dropElements(arr, func) {
+  for(var i=0; i<arr.length; i++){
+    if(func(arr[i])) break;
+  }
+  if(i==arr.length) return [];
+  return arr.slice(i);
+}
+dropElements([1, 2, 3, 4], function(n) {return n > 5;});    // []
