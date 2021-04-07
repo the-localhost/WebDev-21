@@ -163,3 +163,20 @@ function uniteUnique(arr) {
   return res;
 }
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);   // [1, 3, 2, 5, 4]
+
+// Convert HTML entities
+function convertHTML(str) {
+  let entities = {
+    "&" : "&amp;",
+    "<" : "&lt;",
+    ">" : "&gt;",
+    "\"": "&quot;",
+    "'" : "&apos;"
+  };
+  for(let entity in entities){
+    var regex = new RegExp(entity, "g");
+    str = str.replace(regex, entities[entity]);
+  }
+  return str;
+}
+convertHTML("Dolce & Gabbana");   // Dolce &amp; Gabbana
