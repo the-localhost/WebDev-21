@@ -213,3 +213,20 @@ const isPrime = (num) => {
   return true;
 }
 sumPrimes(10);      // 17
+
+// Smallest Common Multiple
+function smallestCommons(arr) {
+  arr.sort((a,b)=>a-b);
+  let a=arr[0], b=arr[1];
+  let lcm=a;
+  for(let i =a+1; i<=b; i++) {
+    lcm = (lcm*i)/gcd(lcm, i);
+  }
+  return lcm;
+}
+const gcd = (b, a) => {
+  if(a>b) return gcd(a,b);
+  if(a==0) return b;
+  return gcd(a, b%a);
+};
+console.log(smallestCommons([2,10]));   // 2520
