@@ -310,3 +310,29 @@ function addTogether(x) {
   };
 }
 addTogether(2,3);       // 5
+
+// Make a Person
+var Person = function(firstAndLast) {
+  // Complete the method below and implement the others similarly
+  this.getFullName = function() {
+    return firstAndLast;
+  };
+  this.getFirstName = function() {
+    return firstAndLast.split(" ")[0];
+  };
+  this.getLastName = function() {
+    return firstAndLast.split(" ")[1];
+  };
+  this.setFirstName = function(name) {
+    firstAndLast = name+" "+this.getLastName();
+  };
+  this.setLastName = function(name) {
+    firstAndLast = this.getFirstName()+" "+name;
+  };
+  this.setFullName = function(name) {
+    firstAndLast = name;
+  };
+};
+var bob = new Person('Bob Ross');
+bob.setFirstName("Haskell")
+console.log(bob.getFullName());       // Haskell Ross
