@@ -70,3 +70,11 @@ whatIsInAName([{ first: "Romeo", last: "Montague" },            // [{ first: "Ty
                 { first: "Mercutio", last: null }, 
                 { first: "Tybalt", last: "Capulet" }], 
                 { last: "Capulet" });
+
+                
+// Spinal Tap Case
+function spinalCase(str) {
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");        // handling where new word starts w/o space with capital letter
+  return str.toLowerCase().split(/[_\s-]+/g).join("-");
+}
+spinalCase('This Is Spinal Tap');
