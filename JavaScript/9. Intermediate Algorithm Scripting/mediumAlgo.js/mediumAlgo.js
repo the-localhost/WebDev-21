@@ -255,3 +255,32 @@ function steamrollArray(arr, res=[]) {
   return res;
 }
 steamrollArray([1, {}, [3, [[4]]]]);    // [1, {}, 3, 4]
+
+// binary agents
+function binaryAgent(str) {
+  let chars = str.split(" ");
+  let res = "";
+  for(let i in chars){
+    res+=String.fromCharCode(toDecimal(chars[i]));
+  }
+  return res;
+}
+function toDecimal(str){       // returns decimal conversion of binary string
+  let ans = 0;
+  for(let i=str.length-1; i>=0; i--){
+    ans += parseInt(str[i])*powerOfTwo(str.length-1-i);
+  }
+  return ans;
+}
+function powerOfTwo(num){     // returns 2 raised to the power num
+  let ans = 1;
+  for(let i=1; i<=num; i++){
+    ans*=2;
+  }
+  return ans;
+}
+binaryAgent("01000001 01110010 01100101 01101110 00100111           // Aren't bonfires fun!?
+            01110100 00100000 01100010 01101111 01101110 
+            01100110 01101001 01110010 01100101 01110011 
+            00100000 01100110 01110101 01101110 00100001 
+            00111111);
