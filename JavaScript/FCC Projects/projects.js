@@ -41,3 +41,18 @@ function convertToRoman(num) {
    return str;
 }
 console.log(convertToRoman(2));
+
+// caesars cipher
+function rot13(str) {
+    let res = "";
+    for(let i in str){
+      let code = str.charCodeAt(i);
+      if(code<=90 && code>=65){
+        code = ((13+(code-64))%26)+64;
+        if(code==64) code=90;
+      }
+      res += String.fromCharCode(code);
+    }
+    return res;
+}
+console.log(rot13("SERR CVMMN!"));
