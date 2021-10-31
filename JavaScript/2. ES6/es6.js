@@ -173,6 +173,17 @@ const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old.`;
 console.log(greeting);
 
+// Dynamic properties in objects
+// To name the property using variables, use square brackets [variable_name]
+// we can also use expressions (like 1+2) instead of variable name
+// the property name will then be the result (here, 3) of that expression
+const name1 = "John";
+const name2 = "Will";
+const marks = {
+    [name1] : 85,
+    [name2] : 88
+}
+
 // concise object literal declarations using object property shorthand
 // eliminates redundancy. eg: older version code
 const getMousePosition = (x, y) => ({
@@ -203,7 +214,7 @@ const person = {
  *  > just a syntax; not a full-fledged implementation of OOPs
  *  > The constructor method is a special method for creating and initializing an object created with a class
  *  > the class keyword declares a new function, to which a constructor is added
- *  > This constructor is invoked when new is called to create a new object.
+ *  > This constructor is invoked when 'new' is called to create a new object.
  *  > UpperCamelCase should be used by convention for ES6 class names
  */
 var SpaceShuttle = function(targetPlanet){  // ES5 code:
@@ -322,7 +333,7 @@ myPromise.then(result => {
     // ...
 });
 
-/** handling a rejected proise with catch
+/** handling a rejected promise with catch
  *  > 'catch' method is used when out promise has been rejected
  *  > executed immediately after a promise's reject method is called
  *  > error is the argument passed in to the reject method
